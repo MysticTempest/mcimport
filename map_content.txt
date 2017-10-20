@@ -1,74 +1,74 @@
-1 0	default:stone				// TODO: Stone type
-1 1	default:stone				// TODO: Stone type
-1 2	xdecor:desertstone_tile
-1 3	default:stone				// TODO: Stone type
-1 4	xdecor:hard_clay
-1 5	default:stone				// TODO: Stone type
-1 6	xdecor:stone_tile
+1 0	mcl_core:stone				// TODO: Stone type
+1 1	mcl_core:stone				// TODO: Stone type
+1 2	mcl_core:redsandstonesmooth
+1 3	mcl_core:stone				// TODO: Stone type
+1 4	mcl_colorblocks:hardened_clay
+1 5	mcl_core:stone				// TODO: Stone type
+1 6	mcl_core:andesite_smooth
 
-2	default:dirt_with_grass
-3	default:dirt
-4	default:cobble
+2	mcl_core:dirt_with_grass
+3	mcl_core:dirt
+4	mcl_core:cobble
 
 #ifdef MORETREES
-	5 0	default:wood
+	5 0	mcl_core:wood
 	5 1	moretrees:spruce_planks
 	5 2	moretrees:birch_planks
 	5 3	moretrees:sequoia_planks
 	5 4	moretrees:fir_planks
 	5 5	moretrees:oak_planks
 
-	6 0	default:sapling
-	6 8	default:sapling
+	6 0	mcl_core:sapling
+	6 8	mcl_core:sapling
 	6 1	moretrees:spruce_sapling
 	6 9	moretrees:spruce_sapling
 	6 2	moretrees:birch_sapling
 	6 10	moretrees:birch_sapling
 	6 3	moretrees:sequoia_sapling
 	6 11	moretrees:sequoia_sapling
-	6 4	default:acacia_sapling
-	6 12	default:acacia_sapling
+	6 4	mcl_core:acaciasapling
+	6 12	mcl_core:acaciasapling
 	6 5	moretrees:oak_sapling
 	6 13	moretrees:oak_sapling
 #else
-	5 0	default:wood
-	5 1	default:pine_wood
-	5 2	default:aspen_wood
-	5 3	default:junglewood
-	5 4	default:acacia_wood
-	5 5	default:wood
+	5 0	mcl_core:wood
+	5 1	mcl_core:sprucewood
+	5 2	mcl_core:birchwood
+	5 3	mcl_core:junglewood
+	5 4	mcl_core:acaciawood
+	5 5	mcl_core:wood
 
-	6 0	default:sapling
-	6 8	default:sapling
-	6 1	default:pine_sapling
-	6 9	default:pine_sapling
-	6 2	default:aspen_sapling
-	6 10	default:aspen_sapling
-	6 3	default:junglesapling
-	6 11	default:junglesapling
-	6 4	default:acacia_sapling
-	6 12	default:acacia_sapling
-	6 5	default:sapling
-	6 13	default:sapling
+	6 0	mcl_core:sapling
+	6 8	mcl_core:sapling
+	6 1	mcl_core:sprucesapling
+	6 9	mcl_core:sprucesapling
+	6 2	mcl_core:birchsapling
+	6 10	mcl_core:birchsapling
+	6 3	mcl_core:junglesapling
+	6 11	mcl_core:junglesapling
+	6 4	mcl_core:acaciasapling
+	6 12	mcl_core:acaciasapling
+	6 5	mcl_core:sapling
+	6 13	mcl_core:sapling
 #endif
 
-7	default:stone				// Bedrock
+7	mcl_core:bedrock				// Bedrock
 
 // blocks 8, 9, 10 and 11 (water and lava) are handled in code.
-9	default:water_source
-11	default:lava_source
+9	mcl_core:water_source
+11	mcl_core:lava_source
 
-12 0	default:sand
-12 1	default:desert_sand
-13	default:gravel
-14	default:stone_with_gold
-15	default:stone_with_iron
-16	default:stone_with_coal
+12 0	mcl_core:sand
+12 1	mcl_core:redsand
+13	mcl_core:gravel
+14	mcl_core:stone_with_gold
+15	mcl_core:stone_with_iron
+16	mcl_core:stone_with_coal
 
 #ifdef MORETREES
-	17 0	default:tree 0
-	17 4	default:tree 18
-	17 8	default:tree 9
+	17 0	mcl_core:tree 0
+	17 4	mcl_core:tree 18
+	17 8	mcl_core:tree 9
 	17 1	moretrees:spruce_trunk 0
 	17 5	moretrees:spruce_trunk 18
 	17 9	moretrees:spruce_trunk 9
@@ -78,8 +78,8 @@
 	17 3	moretrees:sequoia_trunk 0
 	17 7	moretrees:sequoia_trunk 18
 	17 11	moretrees:sequoia_trunk 9
-	18 0,8	default:leaves
-	18 4,12	default:leaves 1
+	18 0,8	mcl_core:leaves
+	18 4,12	mcl_core:leaves 1
 	18 1,9	moretrees:spruce_leaves
 	18 5,13	moretrees:spruce_leaves 1
 	18 2,10	moretrees:birch_leaves
@@ -97,64 +97,64 @@
 	162 5	moretrees:oak_trunk 18
 	162 9	moretrees:oak_trunk 9
 #else
-	17 0	default:tree 0
-	17 4	default:tree 18
-	17 8	default:tree 9
-	17 1	default:pine_tree 0
-	17 5	default:pine_tree 18
-	17 9	default:pine_tree 9
-	17 2	default:aspen_tree 0
-	17 6	default:aspen_tree 18
-	17 10	default:aspen_tree 9
-	17 3	default:jungletree 0
-	17 7	default:jungletree 18
-	17 11	default:jungletree 9
-	17 12	default:tree		 # bark only versions
-	17 13	default:pine_tree
-	17 14	default:aspen_tree
-	17 15	default:jungletree
-	18 0,8	default:leaves
-	18 4,12	default:leaves 1
-	18 1,9	default:pine_needles
-	18 5,13	default:pine_needles 1
-	18 2,10	default:aspen_leaves
-	18 6,14	default:aspen_leaves 1
-	18 3,11	default:jungleleaves
-	18 7,15	default:jungleleaves 1
-	161 0,8	default:acacia_leaves
-	161 4,12	default:acacia_leaves 1
-	161 1,9	default:leaves
-	161 5,13	default:leaves 1
-	162 0	default:acacia_tree 0
-	162 4	default:acacia_tree 18
-	162 8	default:acacia_tree 9
-	162 1	default:tree 0
-	162 5	default:tree 18
-	162 9	default:tree 9
-	162 12	default:acacia_tree
-	162 13	default:tree
+	17 0	mcl_core:tree 0
+	17 4	mcl_core:tree 18
+	17 8	mcl_core:tree 9
+	17 1	mcl_core:sprucetree 0
+	17 5	mcl_core:sprucetree 18
+	17 9	mcl_core:sprucetree 9
+	17 2	mcl_core:birchtree 0
+	17 6	mcl_core:birchtree 18
+	17 10	mcl_core:birchtree 9
+	17 3	mcl_core:jungletree 0
+	17 7	mcl_core:jungletree 18
+	17 11	mcl_core:jungletree 9
+	17 12	mcl_core:tree		 # bark only versions
+	17 13	mcl_core:sprucetree
+	17 14	mcl_core:birchtree
+	17 15	mcl_core:jungletree
+	18 0,8	mcl_core:leaves
+	18 4,12	mcl_core:leaves 1
+	18 1,9	mcl_core:spruceleaves
+	18 5,13	mcl_core:spruceleaves 1
+	18 2,10	mcl_core:birchleaves
+	18 6,14	mcl_core:birchleaves 1
+	18 3,11	mcl_core:jungleleaves
+	18 7,15	mcl_core:jungleleaves 1
+	161 0,8	mcl_core:acacialeaves
+	161 4,12	mcl_core:acacialeaves 1
+	161 1,9	mcl_core:leaves
+	161 5,13	mcl_core:leaves 1
+	162 0	mcl_core:acaciatree 0
+	162 4	mcl_core:acaciatree 18
+	162 8	mcl_core:acaciatree 9
+	162 1	mcl_core:tree 0
+	162 5	mcl_core:tree 18
+	162 9	mcl_core:tree 9
+	162 12	mcl_core:acaciatree
+	162 13	mcl_core:tree
 
 #endif
 
-19	default:nyancat_rainbow			// Sponge
-20	default:glass
-21	lapis:stone_with_lapis
-22	lapis:lapisblock
-24	default:sandstone			// TODO: Sandstone type
+19	mcl_sponges:sponge			// Sponge
+20	mcl_core:glass
+21	mcl_core:stone_with_lapis
+22	mcl_core:lapisblock
+24	mcl_core:sandstone			// TODO: Sandstone type
 
 25	mesecons_noteblock:noteblock		// FIXME: get pitch from entity data
 
-26 0	beds:bed_bottom 2
-26 1	beds:bed_bottom 3
-26 2	beds:bed_bottom 0
-26 3	beds:bed_bottom 1
-26 8	beds:bed_top 2
-26 9	beds:bed_top 3
-26 10	beds:bed_top 0
-26 11	beds:bed_top 1
+26 0	mcl_beds:bed_red_bottom 2
+26 1	mcl_beds:bed_red_bottom 3
+26 2	mcl_beds:bed_red_bottom 0
+26 3	mcl_beds:bed_red_bottom 1
+26 8	mcl_beds:bed_red_top 2
+26 9	mcl_beds:bed_red_top 3
+26 10	mcl_beds:bed_red_top 0
+26 11	mcl_beds:bed_red_top 1
 
-27	carts:powerrail				// Powered rail
-28	carts:rail				// Detector rail
+27	mcl_minecarts:golden_rail_on		// Powered rail
+28	mcl_minecarts:detector_rail_on				// Detector rail
 
 29 0	mesecons_pistons:piston_down_sticky_off
 29 1	mesecons_pistons:piston_up_sticky_off
@@ -169,12 +169,12 @@
 29 12	mesecons_pistons:piston_sticky_on 1
 29 13	mesecons_pistons:piston_sticky_on 3
 
-30	xdecor:cobweb
-31 0	default:dry_shrub
-31 2	ferns:tree_fern_leaves
+30	mcl_core:cobweb
+31 0	mcl_core:deadbush
+31 2	mcl_flowers:fern
 
-31 1	default:grass_5				// code randomly changes height
-32	default:dry_shrub
+31 1	mcl_mcl_flowers:tallgrass		// code randomly changes height
+32	mcl_core:deadbush
 
 33 0	mesecons_pistons:piston_down_normal_off
 33 1	mesecons_pistons:piston_up_normal_off
@@ -189,186 +189,186 @@
 33 12	mesecons_pistons:piston_normal_on 1
 33 13	mesecons_pistons:piston_normal_on 3
 
-35 0	wool:white
-35 1	wool:orange
-35 2	wool:magenta
-35 3	wool:blue
-35 4	wool:yellow
-35 5	wool:green
-35 6	wool:pink
-35 7	wool:dark_grey
-35 8	wool:grey
-35 9	wool:cyan
-35 10	wool:violet
-35 11	wool:blue
-35 12	wool:brown
-35 13	wool:dark_green
-35 14	wool:red
-35 15	wool:black
+35 0	mcl_wool:white
+35 1	mcl_wool:orange
+35 2	mcl_wool:magenta
+35 3	mcl_wool:blue
+35 4	mcl_wool:yellow
+35 5	mcl_wool:green
+35 6	mcl_wool:pink
+35 7	mcl_wool:dark_grey
+35 8	mcl_wool:grey
+35 9	mcl_wool:cyan
+35 10	mcl_wool:violet
+35 11	mcl_wool:blue
+35 12	mcl_wool:brown
+35 13	mcl_wool:dark_green
+35 14	mcl_wool:red
+35 15	mcl_wool:black
 
-37	flowers:dandelion_yellow
-38 0,4	flowers:rose
-38 1	flowers:geranium
-38 2	flowers:viola
-38 3,6	flowers:dandelion_white
-38 5,7	flowers:tulip
-38 8	flowers:dandelion_white
+37	mcl_flowers:dandelion
+38 0,4	mcl_flowers:rose_bush
+38 1	mcl_flowers:allium
+38 2	mcl_flowers:blue_orchid
+38 3,6	mcl_flowers:tulip_white
+38 5,7	mcl_flowers:tulip_pink
+38 8	mcl_flowers:tulip_white
 
-39	flowers:mushroom_brown
-40	flowers:mushroom_red
+39	mcl_mushrooms:mushroom_brown
+40	mcl_mushrooms:mushroom_red
 
-41	default:goldblock
-42	default:steelblock
+41	mcl_core:goldblock
+42	mcl_core:ironblock
 
-43 0	default:stone				// Double slabs
-43 1	default:sandstone
-43 2 	default:wood
-43 3	default:cobble
-43 4	default:brick
-43 5	default:stonebrick
+43 0	mcl_core:stone				// Double slabs
+43 1	mcl_core:sandstone
+43 2 	mcl_core:wood
+43 3	mcl_core:cobble
+43 4	mcl_core:brick_block
+43 5	mcl_core:stonebrick
 #ifdef NETHER
-	43 6	nether:brick
+	43 6	mcl_nether:nether_brick
 #endif
 #ifdef QUARTZ
-	43 7	quartz:block
+	43 7	mcl_nether:quartz_block
 #endif
-43 8	default:stone
-43 9	default:sandstone
+43 8	mcl_core:stone
+43 9	mcl_core:sandstone
 #ifdef QUARTZ
-	43 10	quartz:chiseled
+	43 10	mcl_nether:quartz_chiseled
 #endif
 
-44 0	stairs:slab_stone
-44 8	stairs:slab_stone 22
-44 1	stairs:slab_sandstone
-44 9	stairs:slab_sandstone 22
-44 2	stairs:slab_wood
-44 10	stairs:slab_wood 22
-44 3	stairs:slab_cobble
-44 11	stairs:slab_cobble 22
-44 4	stairs:slab_brick
-44 12	stairs:slab_brick 22
-44 5	stairs:slab_stonebrick
-44 13	stairs:slab_stonebrick 22
+44 0	mcl_stairs:slab_stone
+44 8	mcl_stairs:slab_stone 22
+44 1	mcl_stairs:slab_sandstone
+44 9	mcl_stairs:slab_sandstone 22
+44 2	mcl_stairs:slab_wood
+44 10	mcl_stairs:slab_wood 22
+44 3	mcl_stairs:slab_cobble
+44 11	mcl_stairs:slab_cobble 22
+44 4	mcl_stairs:slab_brick_block
+44 12	mcl_stairs:slab_brick_block 22
+44 5	mcl_stairs:slab_stonebrick
+44 13	mcl_stairs:slab_stonebrick 22
 
 #ifdef NETHER
-	44 6	stairs:slab_nether_brick
-	44 14	stairs:slab_nether_brick 22
+	44 6	mcl_stairs:slab_nether_brick
+	44 14	mcl_stairs:slab_nether_brick 22
 #else
-	44 6	stairs:slab_stonebrick
-	44 14	stairs:slab_stonebrick 22
+	44 6	mcl_stairs:slab_stonebrick
+	44 14	mcl_stairs:slab_stonebrick 22
 #endif
 
 #ifdef QUARTZ
-	44 7	stairs:slab_quartzblock
-	44 15	stairs:slab_quartzblock 22
+	44 7	mcl_stairs:slab_quartzblock
+	44 15	mcl_stairs:slab_quartzblock 22
 #else
-	44 7	stairs:slab_stonebrick
-	44 15	stairs:slab_stonebrick 22
+	44 7	mcl_stairs:slab_stonebrick
+	44 15	mcl_stairs:slab_stonebrick 22
 #endif
 
-45	default:brick
+45	mcl_core:brick_block
 
-46	tnt:tnt
+46	mcl_tnt:tnt
 
-47	default:bookshelf			// FIXME: MC's node is same-faced every way, can't rotate smartly
+47	mcl_books:bookshelf			// FIXME: MC's node is same-faced every way, can't rotate smartly
 
-48	default:mossycobble
-49	default:obsidian
+48	mcl_core:mossycobble
+49	mcl_core:obsidian
 
-50 0	default:torch 1
-50 1	default:torch 3
-50 2	default:torch 2
-50 3	default:torch 4
-50 4	default:torch 5
-50 5	default:torch 1
+50 0	mcl_torches:torch 1
+50 1	mcl_torches:torch 3
+50 2	mcl_torches:torch 2
+50 3	mcl_torches:torch 4
+50 4	mcl_torches:torch 5
+50 5	mcl_torches:torch 1
 
-51	fire:basic_flame
+51	mcl_fire:fire
 
 						// 52 monster spawner
 
-53 0	stairs:stair_wood 1
-53 1	stairs:stair_wood 3
-53 2	stairs:stair_wood 2
-53 3	stairs:stair_wood 0
-53 4	stairs:stair_wood 23
-53 5	stairs:stair_wood 21
-53 6	stairs:stair_wood 22
-53 7	stairs:stair_wood 20
+53 0	mcl_stairs:stair_wood 1
+53 1	mcl_stairs:stair_wood 3
+53 2	mcl_stairs:stair_wood 2
+53 3	mcl_stairs:stair_wood 0
+53 4	mcl_stairs:stair_wood 23
+53 5	mcl_stairs:stair_wood 21
+53 6	mcl_stairs:stair_wood 22
+53 7	mcl_stairs:stair_wood 20
 
-54 0	default:chest 2				// map to default orientation == 2
-54 2	default:chest 2				// TODO: contents
-54 3	default:chest 0
-54 4	default:chest 3
-54 5	default:chest 1
+54 0	mcl_chests:chest 2				// map to default orientation == 2
+54 2	mcl_chests:chest 2				// TODO: contents
+54 3	mcl_chests:chest 0
+54 4	mcl_chests:chest 3
+54 5	mcl_chests:chest 1
 
 55	mesecons:wire_11111111_off		// FIXME: manually fit wires based on neighbors
 
-56	default:stone_with_diamond
-57	default:diamondblock
+56	mcl_core:stone_with_diamond
+57	mcl_core:diamondblock
 
-58	xdecor:workbench			// not an exact match
+58	mcl_crafting_table:crafting_table			// not an exact match
 
-59 0	farming:wheat_1
-59 1	farming:wheat_2
-59 2	farming:wheat_3
-59 3	farming:wheat_4
-59 4	farming:wheat_5
-59 5	farming:wheat_6
-59 6	farming:wheat_7
-59 7	farming:wheat_8
+59 0	mcl_farming:wheat_0
+59 1	mcl_farming:wheat_1
+59 2	mcl_farming:wheat_2
+59 3	mcl_farming:wheat_3
+59 4	mcl_farming:wheat_4
+59 5	mcl_farming:wheat_5
+59 6	mcl_farming:wheat_6
+59 7	mcl_farming:wheat_7
 
-60 0	farming:soil
-60	farming:soil_wet
+60 0	mcl_farming:soil
+60	mcl_farming:soil_wet
 
-61 2	default:furnace 2			// TODO: contents
-61 3	default:furnace 0
-61 4	default:furnace 1
-61 5	default:furnace 3
-62 2	default:furnace_active 2
-62 3	default:furnace_active 0
-62 4	default:furnace_active 1
-62 5	default:furnace_active 3
+61 2	mcl_furnaces:furnace 2			// TODO: contents
+61 3	mcl_furnaces:furnace 0
+61 4	mcl_furnaces:furnace 1
+61 5	mcl_furnaces:furnace 3
+62 2	mcl_furnaces:furnace_active 2
+62 3	mcl_furnaces:furnace_active 0
+62 4	mcl_furnaces:furnace_active 1
+62 5	mcl_furnaces:furnace_active 3
 
-63 0	signs:sign_yard 0			// small stick under sign
-63 1	signs:sign_yard 0			// doesn't rotate like MC's sign
-63 2	signs:sign_yard 0			// does so make an approximation for the
-63 3	signs:sign_yard 1			// rotation angles.
-63 4	signs:sign_yard 1
-63 5	signs:sign_yard 1
-63 6	signs:sign_yard 1
-63 7	signs:sign_yard 2
-63 8	signs:sign_yard 2
-63 9	signs:sign_yard 2
-63 10	signs:sign_yard 2
-63 11	signs:sign_yard 3
-63 12	signs:sign_yard 3
-63 13	signs:sign_yard 3
-63 14	signs:sign_yard 3
-63 15	signs:sign_yard 0
+63 0	mcl_signs:standing_sign 0			// small stick under sign
+63 1	mcl_signs:standing_sign 0			// doesn't rotate like MC's sign
+63 2	mcl_signs:standing_sign 0			// does so make an approximation for the
+63 3	mcl_signs:standing_sign 1			// rotation angles.
+63 4	mcl_signs:standing_sign 1
+63 5	mcl_signs:standing_sign 1
+63 6	mcl_signs:standing_sign 1
+63 7	mcl_signs:standing_sign 2
+63 8	mcl_signs:standing_sign 2
+63 9	mcl_signs:standing_sign 2
+63 10	mcl_signs:standing_sign 2
+63 11	mcl_signs:standing_sign 3
+63 12	mcl_signs:standing_sign 3
+63 13	mcl_signs:standing_sign 3
+63 14	mcl_signs:standing_sign 3
+63 15	mcl_signs:standing_sign 0
 
 64	air					// door parts get fixed up in code
 
-65 2	default:ladder 5
-65 3	default:ladder 4
-65 4	default:ladder 2
-65 5	default:ladder 3
+65 2	mcl_core:ladder 5
+65 3	mcl_core:ladder 4
+65 4	mcl_core:ladder 2
+65 5	mcl_core:ladder 3
 
-66	carts:rail
+66	mcl_minecarts:detector_rail_on
 
-67 0	stairs:stair_cobble 1
-67 1	stairs:stair_cobble 3
-67 2	stairs:stair_cobble 2
-67 3	stairs:stair_cobble 0
-67 4	stairs:stair_cobble 23
-67 5	stairs:stair_cobble 21
-67 6	stairs:stair_cobble 22
-67 7	stairs:stair_cobble 20
+67 0	mcl_stairs:stair_cobble 1
+67 1	mcl_stairs:stair_cobble 3
+67 2	mcl_stairs:stair_cobble 2
+67 3	mcl_stairs:stair_cobble 0
+67 4	mcl_stairs:stair_cobble 23
+67 5	mcl_stairs:stair_cobble 21
+67 6	mcl_stairs:stair_cobble 22
+67 7	mcl_stairs:stair_cobble 20
 
-68 2	default:sign_wall 5
-68 3	default:sign_wall 4
-68 4	default:sign_wall 2
-68 5	default:sign_wall 3
+68 2	mcl_signs:wall_sign 5
+68 3	mcl_signs:wall_sign 4
+68 4	mcl_signs:wall_sign 2
+68 5	mcl_signs:wall_sign 3
 
 69 0	mesecons_walllever:wall_lever_off 15
 69 1	mesecons_walllever:wall_lever_off 3
@@ -393,8 +393,8 @@
 
 72	mesecons_pressureplates:pressure_plate_wood_off
 
-73	default:stone_with_mese			// Redstone ore
-74	default:stone_with_mese
+73	mcl_core:stone_with_mese			// Redstone ore
+74	mcl_core:stone_with_mese
 
 75 1	mesecons_torch:mesecon_torch_off 3
 75 2	mesecons_torch:mesecon_torch_off 2
@@ -408,30 +408,30 @@
 76 4	mesecons_torch:mesecon_torch_on 5
 76 5	mesecons_torch:mesecon_torch_on 1
 
-77 0	mesecons_button:button_off 8
-77 1	mesecons_button:button_off 3
-77 2	mesecons_button:button_off 1
-77 3	mesecons_button:button_off 4
-77 4	mesecons_button:button_off 2
-77 5	mesecons_button:button_off 10
+77 0	mesecons_button:button_stone_off 8
+77 1	mesecons_button:button_stone_off 3
+77 2	mesecons_button:button_stone_off 1
+77 3	mesecons_button:button_stone_off 4
+77 4	mesecons_button:button_stone_off 2
+77 5	mesecons_button:button_stone_off 10
 
-78	default:snow				// TODO: snow height
+78	mcl_core:snow				// TODO: snow height
 
-79	default:ice
-80	default:snowblock
-81	default:cactus
-82	default:clay
-83	default:papyrus
+79	mcl_core:ice
+80	mcl_core:snowblock
+81	mcl_core:cactus
+82	mcl_core:clay
+83	mcl_core:reeds
 
-85	default:fence_wood
+85	mcl_fences:fence
 
-86	crops:pumpkin				// rotates randomly
+86	mcl_farming:pumpkin_face				// rotates randomly
 
 #ifdef NETHER
-	87	nether:rack
-	88	nether:sand
-	89	nether:glowstone
-	90	nether:portal
+	87	mcl_nether:netherrack
+	88	mcl_nether:soul_sand
+	89	mcl_nether:glowstone
+	90	mcl_portals:portal
 #endif
 
 93 0	mesecons_delayer:delayer_off_1 3
@@ -468,112 +468,112 @@
 94 14	mesecons_delayer:delayer_on_4 1
 94 15	mesecons_delayer:delayer_on_4 2
 
-96 0	doors:trapdoor 2
-96 1	doors:trapdoor 0
-96 2	doors:trapdoor 1
-96 3	doors:trapdoor 3
-96 4	doors:trapdoor_open 2
-96 5	doors:trapdoor_open 0
-96 6	doors:trapdoor_open 1
-96 7	doors:trapdoor_open 3
-96 8	doors:trapdoor 22
-96 9	doors:trapdoor 20
-96 10	doors:trapdoor 23
-96 11	doors:trapdoor 21
-96 12	doors:trapdoor_open 22
-96 13	doors:trapdoor_open 20
-96 14	doors:trapdoor_open 23
-96 15	doors:trapdoor_open 21
+96 0	mcl_doors:trapdoor 2
+96 1	mcl_doors:trapdoor 0
+96 2	mcl_doors:trapdoor 1
+96 3	mcl_doors:trapdoor 3
+96 4	mcl_doors:trapdoor_open 2
+96 5	mcl_doors:trapdoor_open 0
+96 6	mcl_doors:trapdoor_open 1
+96 7	mcl_doors:trapdoor_open 3
+96 8	mcl_doors:trapdoor 22
+96 9	mcl_doors:trapdoor 20
+96 10	mcl_doors:trapdoor 23
+96 11	mcl_doors:trapdoor 21
+96 12	mcl_doors:trapdoor_open 22
+96 13	mcl_doors:trapdoor_open 20
+96 14	mcl_doors:trapdoor_open 23
+96 15	mcl_doors:trapdoor_open 21
 
-97 0	default:stone				// Silverfish
-97 1	default:cobble
-97 2	default:stonebrick
-97 3	default:cobble
-97 4	default:cobble
-97 5	default:cobble
+97 0	mcl_core:stone				// Silverfish
+97 1	mcl_core:cobble
+97 2	mcl_core:stonebrick
+97 3	mcl_core:cobble
+97 4	mcl_core:cobble
+97 5	mcl_core:cobble
 
-98 0,1,2	default:stonebrick
-98 3	xdecor:stone_rune
+98 0,1,2	mcl_core:stonebrick
+98 3	mcl_core:stonebrickcarved
 
-101	xpanes:bar_15				// FIXME: rotation, shape
-102	xpanes:pane_15				// FIXME: rotation, shape
+101	xpanes:bar_flat				// FIXME: rotation, shape
+102	xpanes:pane_white_flat		// FIXME: rotation, shape
 
-103	crops:melon				// rotates randomly
+103	mcl_farming:melon				// rotates randomly
 
-106 0	vines:side_middle 1			// flat lying vine
-106 1	vines:side_middle 3			// 1 - south
-106 2	vines:side_middle 1			// 2 - west
-106 3	vines:side_middle 1			// 4 - north
-106 4	vines:side_middle 4			// 8 - east
-106 5	vines:side_middle 4			// all other values are randomly
-106 6	vines:side_middle 3			// picked to distribute orientation
-106 7	vines:side_middle 4			// since we can't have vines occupy
-106 8	vines:side_middle 2			// multiple directions like in MC
-106 9	vines:side_middle 5
-106 10	vines:side_middle 3
-106 11	vines:side_middle 2
-106 12	vines:side_middle 4
-106 13	vines:side_middle 5
-106 14	vines:side_middle 3
-106 15	vines:side_middle 2
+106 0	mcl_core:vine 4			// flat lying vine
+106 1	mcl_core:vine 3			// 1 - south
+106 2	mcl_core:vine 4			// 2 - west
+106 3	mcl_core:vine 4			// 4 - north
+106 4	mcl_core:vine 4			// 8 - east
+106 5	mcl_core:vine 4			// all other values are randomly
+106 6	mcl_core:vine 3			// picked to distribute orientation
+106 7	mcl_core:vine 4			// since we can't have vines occupy
+106 8	mcl_core:vine 8			// multiple directions like in MC
+106 9	mcl_core:vine 5
+106 10	mcl_core:vine 3
+106 11	mcl_core:vine 8
+106 12	mcl_core:vine 4
+106 13	mcl_core:vine 5
+106 14	mcl_core:vine 3
+106 15	mcl_core:vine 8
 
-107 0	doors:gate_wood_closed 2
-107 1	doors:gate_wood_closed 0
-107 2	doors:gate_wood_closed 1
-107 3	doors:gate_wood_closed 3
-107 4	doors:gate_wood_open 2
-107 5	doors:gate_wood_open 0
-107 6	doors:gate_wood_open 1
-107 7	doors:gate_wood_open 3
+107 0	mcl_fences:fence_gate 2
+107 1	mcl_fences:fence_gate 0
+107 2	mcl_fences:fence_gate 1
+107 3	mcl_fences:fence_gate 3
+107 4	mcl_fences:fence_gate_open 2
+107 5	mcl_fences:fence_gate_open 0
+107 6	mcl_fences:fence_gate_open 1
+107 7	mcl_fences:fence_gate_open 3
 
-108 0	stairs:stair_brick 1
-108 1	stairs:stair_brick 3
-108 2	stairs:stair_brick 2
-108 3	stairs:stair_brick 0
-108 4	stairs:stair_brick 23
-108 5	stairs:stair_brick 21
-108 6	stairs:stair_brick 22
-108 7	stairs:stair_brick 20
+108 0	mcl_stairs:stair_brick 1
+108 1	mcl_stairs:stair_brick 3
+108 2	mcl_stairs:stair_brick 2
+108 3	mcl_stairs:stair_brick 0
+108 4	mcl_stairs:stair_brick 23
+108 5	mcl_stairs:stair_brick 21
+108 6	mcl_stairs:stair_brick 22
+108 7	mcl_stairs:stair_brick 20
 
-109 0	stairs:stair_stonebrick 1
-109 1	stairs:stair_stonebrick 3
-109 2	stairs:stair_stonebrick 2
-109 3	stairs:stair_stonebrick 0
-109 4	stairs:stair_stonebrick 23
-109 5	stairs:stair_stonebrick 21
-109 6	stairs:stair_stonebrick 22
-109 7	stairs:stair_stonebrick 20
+109 0	mcl_stairs:stair_stonebrick 1
+109 1	mcl_stairs:stair_stonebrick 3
+109 2	mcl_stairs:stair_stonebrick 2
+109 3	mcl_stairs:stair_stonebrick 0
+109 4	mcl_stairs:stair_stonebrick 23
+109 5	mcl_stairs:stair_stonebrick 21
+109 6	mcl_stairs:stair_stonebrick 22
+109 7	mcl_stairs:stair_stonebrick 20
 
-110	default:dirt_with_grass			// Mycelium
+110	mcl_core:mycelium		// Mycelium
 
-111	flowers:waterlily			// rotation done in code randomly
+111	mcl_flowers:waterlily			// rotation done in code randomly
 
 #ifdef NETHER
-	112	nether:brick
+	112	mcl_nether:nether_brick
 #endif
 
-113	default:fence_wood		// nothing better than this, sadly
+113	mcl_fences:fence		// nothing better than this, sadly
 
 #ifdef NETHER
-	114 0	stairs:stair_nether_brick 1
-	114 1	stairs:stair_nether_brick 3
-	114 2	stairs:stair_nether_brick 2
-	114 3	stairs:stair_nether_brick 0
-	114 4	stairs:stair_nether_brick 23
-	114 5	stairs:stair_nether_brick 21
-	114 6	stairs:stair_nether_brick 22
-	114 7	stairs:stair_nether_brick 20
+	114 0	mcl_stairs:stair_nether_brick 1
+	114 1	mcl_stairs:stair_nether_brick 3
+	114 2	mcl_stairs:stair_nether_brick 2
+	114 3	mcl_stairs:stair_nether_brick 0
+	114 4	mcl_stairs:stair_nether_brick 23
+	114 5	mcl_stairs:stair_nether_brick 21
+	114 6	mcl_stairs:stair_nether_brick 22
+	114 7	mcl_stairs:stair_nether_brick 20
 #endif
 
 116	xdecor:enchantment_table
 
-118 0	xdecor:cauldron_empty
-118 1	xdecor:cauldron_empty		// FIXME: should be 1/3 full
-118 2	xdecor:cauldron_empty		// FIXME: should be 2/3 full
-118 3	xdecor:cauldron_empty		// FIXME: should be full
+118 0	mcl_cauldrons:cauldron
+118 1	mcl_cauldrons:cauldron_1	// FIXME: should be 1/3 full
+118 2	mcl_cauldrons:cauldron_2	// FIXME: should be 2/3 full
+118 3	mcl_cauldrons:cauldron_3	// FIXME: should be full
 
-123	mesecons_lightstone:lightstone_gray_off
-124	mesecons_lightstone:lightstone_gray_on
+123	mesecons_lightstone:lightstone_off
+124	mesecons_lightstone:lightstone_on
 
 #ifdef MORETREES
 	125 1	moretrees:spruce_planks
@@ -582,8 +582,8 @@
 	125 4	moretrees:fir_planks
 	125 5	moretrees:oak_planks
 
-	126 0	stairs:slab_wood
-	126 8	stairs:slab_wood 22
+	126 0	mcl_stairs:slab_wood
+	126 8	mcl_stairs:slab_wood 22
 	126 1	moretrees:slab_spruce_planks
 	126 9	moretrees:slab_spruce_planks 22
 	126 2	moretrees:slab_birch_planks
@@ -595,42 +595,42 @@
 	126 5	moretrees:slab_oak_planks
 	126 13	moretrees:slab_oak_planks 22
 #else
-	125 0	default:wood
-	125 1	default:pine_wood
-	125 2	default:aspen_wood
-	125 3	default:junglewood
-	125 4	default:acacia_wood
-	125 5	default:wood
+	125 0	mcl_core:wood
+	125 1	mcl_core:sprucewood
+	125 2	mcl_core:birchwood
+	125 3	mcl_core:junglewood
+	125 4	mcl_core:acaciawood
+	125 5	mcl_core:wood
 
-	126 0	stairs:slab_wood
-	126 8	stairs:slab_wood 22
-	126 1	stairs:slab_pine_wood
-	126 9	stairs:slab_pine_wood 22
-	126 2	stairs:slab_aspen_wood
-	126 10	stairs:slab_aspen_wood 22
-	126 3	stairs:slab_junglewood
-	126 11	stairs:slab_junglewood 22
-	126 4	stairs:slab_acacia_wood
-	126 12	stairs:slab_acacia_wood 22
-	126 5	stairs:slab_wood
-	126 13	stairs:slab_wood 22
+	126 0	mcl_stairs:slab_wood
+	126 8	mcl_stairs:slab_wood 22
+	126 1	mcl_stairs:slab_sprucewood
+	126 9	mcl_stairs:slab_sprucewood 22
+	126 2	mcl_stairs:slab_birchwood
+	126 10	mcl_stairs:slab_birchwood 22
+	126 3	mcl_stairs:slab_junglewood
+	126 11	mcl_stairs:slab_junglewood 22
+	126 4	mcl_stairs:slab_acaciawood
+	126 12	mcl_stairs:slab_acaciawood 22
+	126 5	mcl_stairs:slab_wood
+	126 13	mcl_stairs:slab_wood 22
 #endif
 
-128 0	stairs:stair_sandstone 1
-128 1	stairs:stair_sandstone 3
-128 2	stairs:stair_sandstone 2
-128 3	stairs:stair_sandstone 0
-128 4	stairs:stair_sandstone 23
-128 5	stairs:stair_sandstone 21
-128 6	stairs:stair_sandstone 22
-128 7	stairs:stair_sandstone 20
+128 0	mcl_stairs:stair_sandstone 1
+128 1	mcl_stairs:stair_sandstone 3
+128 2	mcl_stairs:stair_sandstone 2
+128 3	mcl_stairs:stair_sandstone 0
+128 4	mcl_stairs:stair_sandstone 23
+128 5	mcl_stairs:stair_sandstone 21
+128 6	mcl_stairs:stair_sandstone 22
+128 7	mcl_stairs:stair_sandstone 20
 
-129	default:stone				// FIXME: emerald ore
+129	mcl_core:stone_with_emerald		
 
-130 2	xdecor:enderchest 0
-130 3	xdecor:enderchest 2
-130 4	xdecor:enderchest 1
-130 5	xdecor:enderchest 3
+130 2	mcl_chests:ender_chest 0
+130 3	mcl_chests:ender_chest 2
+130 4	mcl_chests:ender_chest 1
+130 5	mcl_chests:ender_chest 3
 
 #ifdef MORETREES
 	134 0	moretrees:stair_spruce_planks 1
@@ -660,52 +660,52 @@
 	136 6	moretrees:stair_sequoia_planks 22
 	136 7	moretrees:stair_sequoia_planks 20
 #else
-	134 0	stairs:stair_pine_wood 1
-	134 1	stairs:stair_pine_wood 3
-	134 2	stairs:stair_pine_wood 2
-	134 3	stairs:stair_pine_wood 0
-	134 4	stairs:stair_pine_wood 23
-	134 5	stairs:stair_pine_wood 21
-	134 6	stairs:stair_pine_wood 22
-	134 7	stairs:stair_pine_wood 20
+	134 0	mcl_stairs:stair_sprucewood 1
+	134 1	mcl_stairs:stair_sprucewood 3
+	134 2	mcl_stairs:stair_sprucewood 2
+	134 3	mcl_stairs:stair_sprucewood 0
+	134 4	mcl_stairs:stair_sprucewood 23
+	134 5	mcl_stairs:stair_sprucewood 21
+	134 6	mcl_stairs:stair_sprucewood 22
+	134 7	mcl_stairs:stair_sprucewood 20
 
-	135 0	stairs:stair_aspen_wood 1
-	135 1	stairs:stair_aspen_wood 3
-	135 2	stairs:stair_aspen_wood 2
-	135 3	stairs:stair_aspen_wood 0
-	135 4	stairs:stair_aspen_wood 23
-	135 5	stairs:stair_aspen_wood 21
-	135 6	stairs:stair_aspen_wood 22
-	135 7	stairs:stair_aspen_wood 20
+	135 0	mcl_stairs:stair_birchwood 1
+	135 1	mcl_stairs:stair_birchwood 3
+	135 2	mcl_stairs:stair_birchwood 2
+	135 3	mcl_stairs:stair_birchwood 0
+	135 4	mcl_stairs:stair_birchwood 23
+	135 5	mcl_stairs:stair_birchwood 21
+	135 6	mcl_stairs:stair_birchwood 22
+	135 7	mcl_stairs:stair_birchwood 20
 
-	136 0	stairs:stair_junglewood 1
-	136 1	stairs:stair_junglewood 3
-	136 2	stairs:stair_junglewood 2
-	136 3	stairs:stair_junglewood 0
-	136 4	stairs:stair_junglewood 23
-	136 5	stairs:stair_junglewood 21
-	136 6	stairs:stair_junglewood 22
-	136 7	stairs:stair_junglewood 20
+	136 0	mcl_stairs:stair_junglewood 1
+	136 1	mcl_stairs:stair_junglewood 3
+	136 2	mcl_stairs:stair_junglewood 2
+	136 3	mcl_stairs:stair_junglewood 0
+	136 4	mcl_stairs:stair_junglewood 23
+	136 5	mcl_stairs:stair_junglewood 21
+	136 6	mcl_stairs:stair_junglewood 22
+	136 7	mcl_stairs:stair_junglewood 20
 #endif
 
 137	mesecons_commandblock:commandblock_off	// FIXME: formspec
 
-139 1	walls:mossycobble
-139	walls:cobble
+139 1	mcl_walls:mossycobble
+139	mcl_walls:cobble
 
-140	flowerpot:empty		// code will plant right flower
+140	mcl_flowerpots:flower_pot		// code will plant right flower
 
-143 0	mesecons_button:button_off 8
-143 1	mesecons_button:button_off 3
-143 2	mesecons_button:button_off 1
-143 3	mesecons_button:button_off 0
-143 4	mesecons_button:button_off 2
-143 5	mesecons_button:button_off 10
+143 0	mesecons_button:button_stone_off 8
+143 1	mesecons_button:button_stone_off 3
+143 2	mesecons_button:button_stone_off 1
+143 3	mesecons_button:button_stone_off 0
+143 4	mesecons_button:button_stone_off 2
+143 5	mesecons_button:button_stone_off 10
 
-146 2	default:chest 2				// Trapped chest
-146 3	default:chest 0
-146 4	default:chest 1
-146 5	default:chest 3
+146 2	mcl_chests:chest 2				// Trapped chest
+146 3	mcl_chests:chest 0
+146 4	mcl_chests:chest 1
+146 5	mcl_chests:chest 3
 
 151 0	mesecons_solarpanel:solar_panel_off 1
 151 1	mesecons_solarpanel:solar_panel_on 1
@@ -724,56 +724,56 @@
 151 14	mesecons_solarpanel:solar_panel_on 1
 151 15	mesecons_solarpanel:solar_panel_on 1
 
-152	default:mese
+152	mesecons_torch:redstoneblock
 
 #ifdef QUARTZ
-	153	quartz:quartz_ore
+	153	mcl_nether:quartz_ore
 
-	155 0	quartz:block
-	155 1	quartz:chiseled
-	155 2	quartz:pillar
-	155 3	quartz:pillar 4				// TODO: check that
-	155 4	quartz:pillar 8				// TODO: check that
+	155 0	mcl_nether:quartz_block
+	155 1	mcl_nether:quartz_chiseled
+	155 2	mcl_nether:quartz_pillar
+	155 3	mcl_nether:quartz_pillar 4				// TODO: check that
+	155 4	mcl_nether:quartz_pillar 8				// TODO: check that
 
-	156 0	stairs:stair_quartzblock 1
-	156 1	stairs:stair_quartzblock 3
-	156 2	stairs:stair_quartzblock 2
-	156 3	stairs:stair_quartzblock 0
-	156 4	stairs:stair_quartzblock 23
-	156 5	stairs:stair_quartzblock 21
-	156 6	stairs:stair_quartzblock 22
-	156 7	stairs:stair_quartzblock 20
+	156 0	mcl_stairs:stair_quartzblock 1
+	156 1	mcl_stairs:stair_quartzblock 3
+	156 2	mcl_stairs:stair_quartzblock 2
+	156 3	mcl_stairs:stair_quartzblock 0
+	156 4	mcl_stairs:stair_quartzblock 23
+	156 5	mcl_stairs:stair_quartzblock 21
+	156 6	mcl_stairs:stair_quartzblock 22
+	156 7	mcl_stairs:stair_quartzblock 20
 #endif
 
-157	carts:rail					// activator rail
+157	mcl_minecarts:detector_rail_on					// activator rail
 
-159 0	hardenedclay:hardened_clay_white
-159 1	hardenedclay:hardened_clay_orange
-159 2	hardenedclay:hardened_clay_magenta
-159 3	hardenedclay:hardened_clay_light_blue
-159 4	hardenedclay:hardened_clay_yellow
-159 5	hardenedclay:hardened_clay_lime
-159 6	hardenedclay:hardened_clay_pink
-159 7	hardenedclay:hardened_clay_gray
-159 8	hardenedclay:hardened_clay_light_gray
-159 9	hardenedclay:hardened_clay_cyan
-159 10	hardenedclay:hardened_clay_purple
-159 11	hardenedclay:hardened_clay_blue
-159 12	hardenedclay:hardened_clay_brown
-159 13	hardenedclay:hardened_clay_green
-159 14	hardenedclay:hardened_clay_red
-159 15	hardenedclay:hardened_clay_black
+159 0	mcl_colorblocks:hardened_clay_white
+159 1	mcl_colorblocks:hardened_clay_orange
+159 2	mcl_colorblocks:hardened_clay_magenta
+159 3	mcl_colorblocks:hardened_clay_light_blue
+159 4	mcl_colorblocks:hardened_clay_yellow
+159 5	mcl_colorblocks:hardened_clay_lime
+159 6	mcl_colorblocks:hardened_clay_pink
+159 7	mcl_colorblocks:hardened_clay_gray
+159 8	mcl_colorblocks:hardened_clay_light_gray
+159 9	mcl_colorblocks:hardened_clay_cyan
+159 10	mcl_colorblocks:hardened_clay_purple
+159 11	mcl_colorblocks:hardened_clay_blue
+159 12	mcl_colorblocks:hardened_clay_brown
+159 13	mcl_colorblocks:hardened_clay_green
+159 14	mcl_colorblocks:hardened_clay_red
+159 15	mcl_colorblocks:hardened_clay_black
 
-160	xpanes:pane					// no colors here sadly
+160	xpanes:pane_white_flat					// no colors here sadly
 
-163 0	stairs:stair_acacia_wood 1
-163 1	stairs:stair_acacia_wood 3
-163 2	stairs:stair_acacia_wood 2
-163 3	stairs:stair_acacia_wood 0
-163 4	stairs:stair_acacia_wood 23
-163 5	stairs:stair_acacia_wood 21
-163 6	stairs:stair_acacia_wood 22
-163 7	stairs:stair_acacia_wood 20
+163 0	mcl_stairs:stair_acaciawood 1
+163 1	mcl_stairs:stair_acaciawood 3
+163 2	mcl_stairs:stair_acaciawood 2
+163 3	mcl_stairs:stair_acaciawood 0
+163 4	mcl_stairs:stair_acaciawood 23
+163 5	mcl_stairs:stair_acaciawood 21
+163 6	mcl_stairs:stair_acaciawood 22
+163 7	mcl_stairs:stair_acaciawood 20
 
 #ifdef MORETREES
 	164 0	moretrees:stair_oak_planks 1
@@ -785,91 +785,91 @@
 	164 6	moretrees:stair_oak_planks 22
 	164 7	moretrees:stair_oak_planks 20
 #else
-	164 0	stairs:stair_wood 1
-	164 1	stairs:stair_wood 3
-	164 2	stairs:stair_wood 2
-	164 3	stairs:stair_wood 0
-	164 4	stairs:stair_wood 23
-	164 5	stairs:stair_wood 21
-	164 6	stairs:stair_wood 22
-	164 7	stairs:stair_wood 20
+	164 0	mcl_stairs:stair_wood 1
+	164 1	mcl_stairs:stair_wood 3
+	164 2	mcl_stairs:stair_wood 2
+	164 3	mcl_stairs:stair_wood 0
+	164 4	mcl_stairs:stair_wood 23
+	164 5	mcl_stairs:stair_wood 21
+	164 6	mcl_stairs:stair_wood 22
+	164 7	mcl_stairs:stair_wood 20
 #endif
 
-167 0	doors:trapdoor_steel 2
-167 1	doors:trapdoor_steel 0
-167 2	doors:trapdoor_steel 1
-167 3	doors:trapdoor_steel 3
-167 4	doors:trapdoor_steel_open 2
-167 5	doors:trapdoor_steel_open 0
-167 6	doors:trapdoor_steel_open 1
-167 7	doors:trapdoor_steel_open 3
-167 8	doors:trapdoor_steel 22
-167 9	doors:trapdoor_steel 20
-167 10	doors:trapdoor_steel 23
-167 11	doors:trapdoor_steel 21
-167 12	doors:trapdoor_steel_open 22
-167 13	doors:trapdoor_steel_open 20
-167 14	doors:trapdoor_steel_open 23
-167 15	doors:trapdoor_steel_open 21
+167 0	mcl_doors:iron_trapdoor 2
+167 1	mcl_doors:iron_trapdoor 0
+167 2	mcl_doors:iron_trapdoor 1
+167 3	mcl_doors:iron_trapdoor 3
+167 4	mcl_doors:iron_trapdoor_open 2
+167 5	mcl_doors:iron_trapdoor_open 0
+167 6	mcl_doors:iron_trapdoor_open 1
+167 7	mcl_doors:iron_trapdoor_open 3
+167 8	mcl_doors:iron_trapdoor 22
+167 9	mcl_doors:iron_trapdoor 20
+167 10	mcl_doors:iron_trapdoor 23
+167 11	mcl_doors:iron_trapdoor 21
+167 12	mcl_doors:iron_trapdoor_open 22
+167 13	mcl_doors:iron_trapdoor_open 20
+167 14	mcl_doors:iron_trapdoor_open 23
+167 15	mcl_doors:iron_trapdoor_open 21
 
-170	farming:straw
+170	mcl_farming:wheat
 
-171 0	carpet:white
-171 1	carpet:orange
-171 2	carpet:magenta
-171 3	carpet:blue
-171 4	carpet:yellow
-171 5	carpet:green
-171 6	carpet:pink
-171 7	carpet:dark_grey
-171 8	carpet:grey
-171 9	carpet:cyan
-171 10	carpet:violet
-171 11	carpet:blue
-171 12	carpet:brown
-171 13	carpet:dark_green
-171 14	carpet:red
-171 15	carpet:black
+171 0	mcl_wool:white_carpet
+171 1	mcl_wool:orange_carpet
+171 2	mcl_wool:magenta_carpet
+171 3	mcl_wool:blue_carpet
+171 4	mcl_wool:yellow_carpet
+171 5	mcl_wool:green_carpet
+171 6	mcl_wool:pink_carpet
+171 7	mcl_wool:dark_grey_carpet
+171 8	mcl_wool:grey_carpet
+171 9	mcl_wool:cyan_carpet
+171 10	mcl_wool:violet_carpet
+171 11	mcl_wool:blue_carpet
+171 12	mcl_wool:brown_carpet
+171 13	mcl_wool:dark_green_carpet
+171 14	mcl_wool:red_carpet
+171 15	mcl_wool:black_carpet
 
-173	default:coalblock
-174	default:ice					// approx
+173	mcl_core:coalblock
+174	mcl_core:ice					// approx
 
-175 0	flowers:sunflower
+175 0	mcl_flowers:sunflower
 
-175 2	default:junglegrass
+175 2	mcl_flowers:tallgrass
 
-// 178 is an inverted daylight sensor, cannot convert!
+178 mesecons_solarpanel:solar_panel_inverted_off   // 178 is an inverted daylight sensor, attempting to convert!
 
-179 1	default:desert_stone			// approx
-179 2	default:desert_stone			// approx
-179	default:desert_stone
+179 1	mcl_core:redsandstone			// approx
+179 2	mcl_core:redsandstone			// approx
+179	mcl_core:redsandstone
 
-180 0	stairs:stair_desert_stone 1
-180 1	stairs:stair_desert_stone 3
-180 2	stairs:stair_desert_stone 2
-180 3	stairs:stair_desert_stone 0
-180 4	stairs:stair_desert_stone 23
-180 5	stairs:stair_desert_stone 21
-180 6	stairs:stair_desert_stone 22
-180 7	stairs:stair_desert_stone 20
+180 0	mcl_stairs:stair_redsandstone 1
+180 1	mcl_stairs:stair_redsandstone 3
+180 2	mcl_stairs:stair_redsandstone 2
+180 3	mcl_stairs:stair_redsandstone 0
+180 4	mcl_stairs:stair_redsandstone 23
+180 5	mcl_stairs:stair_redsandstone 21
+180 6	mcl_stairs:stair_redsandstone 22
+180 7	mcl_stairs:stair_redsandstone 20
 
-181	default:desert_stone
+181	mcl_core:redsandstone
 
-182 8	stairs:slab_desert_stone 22
-182	stairs:slab_desert_stone
+182 8	mcl_stairs:slab_redsandstone 22
+182	mcl_stairs:slab_redsandstone
 
-183	doors:gate_wood_closed
-184	doors:gate_pine_wood_closed
-185	doors:gate_aspen_wood_closed
-186	doors:gate_junglewood_closed
-186	doors:gate_wood_closed
-187	doors:gate_acacia_wood_closed
+183	mcl_fences:fence_gate
+184	mcl_fences:spruce_fence_gate
+185	mcl_fences:birch_fence_gate
+186	mcl_fences:jungle_fence_gate
+186	mcl_fences:fence_gate
+187	mcl_fences:acacia_fence_gate
 
-188	default:fence_pine_wood
-189	default:fence_aspen_wood
-190	default:fence_junglewood
-191	default:fence_wood
-192	default:fence_acacia_wood
+188	mcl_fences:spruce_fence
+189	mcl_fences:birch_fence
+190	mcl_fences:jungle_fence
+191	mcl_fences:fence
+192	mcl_fences:acacia_fence
 
 193	air					// door parts get fixed up in code
 194	air					// door parts get fixed up in code
@@ -877,119 +877,119 @@
 196	air					// door parts get fixed up in code
 197	air					// door parts get fixed up in code
 
-324 0,4	doors:door_wood_b_1 2
-324 1,5	doors:door_wood_b_1 3
-324 2,6	doors:door_wood_b_1 0
-324 3,7	doors:door_wood_b_1 1
-324 8	doors:door_wood_t_1
-324 9	doors:door_wood_t_1
-324 10	doors:door_wood_t_1
-324 11	doors:door_wood_t_1
+324 0,4	mcl_doors:wooden_door_b_1 2
+324 1,5	mcl_doors:wooden_door_b_1 3
+324 2,6	mcl_doors:wooden_door_b_1 0
+324 3,7	mcl_doors:wooden_door_b_1 1
+324 8	mcl_doors:wooden_door_t_1
+324 9	mcl_doors:wooden_door_t_1
+324 10	mcl_doors:wooden_door_t_1
+324 11	mcl_doors:wooden_door_t_1
 
 // Below here are non-MC blocks. We need to put these blocks in the
 // table to make translation a bit easier
 
 // random pick for 31:1 grass
-931 0	default:grass_1				// the 8+ entries are used
-931 1	default:grass_2				// internally to vary grass
-931 2	default:grass_3				// height randomly
-931 3	default:grass_4
-931 4	default:grass_5
+931 0	mcl_flowers:tallgrass				// the 8+ entries are used
+931 1	mcl_flowers:tallgrass				// internally to vary grass
+931 2	mcl_flowers:tallgrass				// height randomly
+931 3	mcl_flowers:tallgrass
+931 4	mcl_flowers:tallgrass
 
 // flower pot plants
-940 0	flowerpot:empty
-940 1	flowerpot:flowers_mushroom_brown
-940 2	flowerpot:flowers_mushroom_red
-940 3	flowerpot:default_cactus
-940 4	flowerpot:default_dry_shrub
-940 5	flowerpot:flowers_rose
-940 6	flowerpot:flowers_geranium
-940 7	flowerpot:flowers_viola
-940 8	flowerpot:flowers_geranium
-940 9	flowerpot:flowers_rose
-940 10	flowerpot:flowers_tulip
-940 11	flowerpot:flowers_dandelion_white
-940 12	flowerpot:flowers_viola
-940 13	flowerpot:flowers_dandelion_white
-940 14	flowerpot:default_sapling
-940 15	flowerpot:default_pine_sapling
+940 0	mcl_flowerpots:flower_pot
+940 1	mcl_flowerpots:flower_pot_mushroom_brown
+940 2	mcl_flowerpots:flower_pot_mushroom_red
+940 3	mcl_flowerpots:flower_pot_cactus
+940 4	mcl_flowerpots:flower_pot_deadbush
+940 5	mcl_flowerpots:flower_pot_rose
+940 6	mcl_flowerpots:flower_pot_geranium
+940 7	mcl_flowerpots:flower_pot_viola
+940 8	mcl_flowerpots:flower_pot_geranium
+940 9	mcl_flowerpots:flower_pot_rose
+940 10	mcl_flowerpots:flower_pot_tulip
+940 11	mcl_flowerpots:flower_pot_dandelion_white
+940 12	mcl_flowerpots:flower_pot_viola
+940 13	mcl_flowerpots:flower_pot_dandelion_white
+940 14	mcl_flowerpots:flower_pot_sapling
+940 15	mcl_flowerpots:flower_pot_sprucesapling
 // overflow
 #ifdef MORETREES
 	941 0	moretrees:birch_sapling
 #else
-	941 0	flowerpot:default_aspen_sapling
+	941 0	mcl_flowerpots:flower_pot_birchsapling
 #endif
-941 1	flowerpot:default_junglesapling
-941 2	flowerpot:default_acacia_sapling
-941 3	flowerpot:default_sapling
-941 4	flowerpot:ferns_tree_fern_leaves
-941 5	flowerpot:flowers_dandelion_white
+941 1	mcl_flowerpots:flower_pot_junglesapling
+941 2	mcl_flowerpots:flower_pot_acaciasapling
+941 3	mcl_flowerpots:flower_pot_sapling
+941 4	mcl_flowerpots:flower_pot_fern
+941 5	mcl_flowerpots:flower_pot_dandelion_white
 
-964 0	doors:door_wood_b_1 1
-964 1	doors:door_wood_b_1 2
-964 2	doors:door_wood_b_1 3
-964 3	doors:door_wood_b_1 0
-964 4	doors:door_wood_b_2 2
-964 5	doors:door_wood_b_2 3
-964 6	doors:door_wood_b_2 0
-964 7	doors:door_wood_b_2 1
-964 8	doors:door_wood_b_2 1
-964 9	doors:door_wood_b_2 2
-964 10	doors:door_wood_b_2 3
-964 11	doors:door_wood_b_2 0
-964 12	doors:door_wood_b_1 0
-964 13	doors:door_wood_b_1 1
-964 14	doors:door_wood_b_1 2
-964 15	doors:door_wood_b_1 3
+964 0	mcl_doors:wooden_door_b_1 1
+964 1	mcl_doors:wooden_door_b_1 2
+964 2	mcl_doors:wooden_door_b_1 3
+964 3	mcl_doors:wooden_door_b_1 0
+964 4	mcl_doors:wooden_door_b_2 2
+964 5	mcl_doors:wooden_door_b_2 3
+964 6	mcl_doors:wooden_door_b_2 0
+964 7	mcl_doors:wooden_door_b_2 1
+964 8	mcl_doors:wooden_door_b_2 1
+964 9	mcl_doors:wooden_door_b_2 2
+964 10	mcl_doors:wooden_door_b_2 3
+964 11	mcl_doors:wooden_door_b_2 0
+964 12	mcl_doors:wooden_door_b_1 0
+964 13	mcl_doors:wooden_door_b_1 1
+964 14	mcl_doors:wooden_door_b_1 2
+964 15	mcl_doors:wooden_door_b_1 3
 
-965 0	doors:door_wood_t_1 1
-965 1	doors:door_wood_t_1 2
-965 2	doors:door_wood_t_1 3
-965 3	doors:door_wood_t_1 0
-965 4	doors:door_wood_t_2 2
-965 5	doors:door_wood_t_2 3
-965 6	doors:door_wood_t_2 0
-965 7	doors:door_wood_t_2 1
-965 8	doors:door_wood_t_2 1
-965 9	doors:door_wood_t_2 2
-965 10	doors:door_wood_t_2 3
-965 11	doors:door_wood_t_2 0
-965 12	doors:door_wood_t_1 0
-965 13	doors:door_wood_t_1 1
-965 14	doors:door_wood_t_1 2
-965 15	doors:door_wood_t_1 3
+965 0	mcl_doors:wooden_door_t_1 1
+965 1	mcl_doors:wooden_door_t_1 2
+965 2	mcl_doors:wooden_door_t_1 3
+965 3	mcl_doors:wooden_door_t_1 0
+965 4	mcl_doors:wooden_door_t_2 2
+965 5	mcl_doors:wooden_door_t_2 3
+965 6	mcl_doors:wooden_door_t_2 0
+965 7	mcl_doors:wooden_door_t_2 1
+965 8	mcl_doors:wooden_door_t_2 1
+965 9	mcl_doors:wooden_door_t_2 2
+965 10	mcl_doors:wooden_door_t_2 3
+965 11	mcl_doors:wooden_door_t_2 0
+965 12	mcl_doors:wooden_door_t_1 0
+965 13	mcl_doors:wooden_door_t_1 1
+965 14	mcl_doors:wooden_door_t_1 2
+965 15	mcl_doors:wooden_door_t_1 3
 
-966 0	doors:door_steel_b_1 1
-966 1	doors:door_steel_b_1 2
-966 2	doors:door_steel_b_1 3
-966 3	doors:door_steel_b_1 0
-966 4	doors:door_steel_b_2 3
-966 5	doors:door_steel_b_2 3
-966 6	doors:door_steel_b_2 0
-966 7	doors:door_steel_b_2 1
-966 8	doors:door_steel_b_2 1
-966 9	doors:door_steel_b_2 2
-966 10	doors:door_steel_b_2 3
-966 11	doors:door_steel_b_2 0
-966 12	doors:door_steel_b_1 0
-966 13	doors:door_steel_b_1 1
-966 14	doors:door_steel_b_1 2
-966 15	doors:door_steel_b_1 3
+966 0	mcl_doors:iron_door_b_1 1
+966 1	mcl_doors:iron_door_b_1 2
+966 2	mcl_doors:iron_door_b_1 3
+966 3	mcl_doors:iron_door_b_1 0
+966 4	mcl_doors:iron_door_b_2 3
+966 5	mcl_doors:iron_door_b_2 3
+966 6	mcl_doors:iron_door_b_2 0
+966 7	mcl_doors:iron_door_b_2 1
+966 8	mcl_doors:iron_door_b_2 1
+966 9	mcl_doors:iron_door_b_2 2
+966 10	mcl_doors:iron_door_b_2 3
+966 11	mcl_doors:iron_door_b_2 0
+966 12	mcl_doors:iron_door_b_1 0
+966 13	mcl_doors:iron_door_b_1 1
+966 14	mcl_doors:iron_door_b_1 2
+966 15	mcl_doors:iron_door_b_1 3
 
-967 0	doors:door_steel_t_1 1
-967 1	doors:door_steel_t_1 2
-967 2	doors:door_steel_t_1 3
-967 3	doors:door_steel_t_1 0
-967 4	doors:door_steel_t_2 3
-967 5	doors:door_steel_t_2 3
-967 6	doors:door_steel_t_2 0
-967 7	doors:door_steel_t_2 1
-967 8	doors:door_steel_t_2 1
-967 9	doors:door_steel_t_2 3
-967 10	doors:door_steel_t_2 3
-967 11	doors:door_steel_t_2 0
-967 12	doors:door_steel_t_1 0
-967 13	doors:door_steel_t_1 1
-967 14	doors:door_steel_t_1 2
-967 15	doors:door_steel_t_1 3
+967 0	mcl_doors:iron_door_t_1 1
+967 1	mcl_doors:iron_door_t_1 2
+967 2	mcl_doors:iron_door_t_1 3
+967 3	mcl_doors:iron_door_t_1 0
+967 4	mcl_doors:iron_door_t_2 3
+967 5	mcl_doors:iron_door_t_2 3
+967 6	mcl_doors:iron_door_t_2 0
+967 7	mcl_doors:iron_door_t_2 1
+967 8	mcl_doors:iron_door_t_2 1
+967 9	mcl_doors:iron_door_t_2 3
+967 10	mcl_doors:iron_door_t_2 3
+967 11	mcl_doors:iron_door_t_2 0
+967 12	mcl_doors:iron_door_t_1 0
+967 13	mcl_doors:iron_door_t_1 1
+967 14	mcl_doors:iron_door_t_1 2
+967 15	mcl_doors:iron_door_t_1 3
 

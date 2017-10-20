@@ -27,7 +27,7 @@ if os.path.exists(sys.argv[2] + "map.sqlite"):
 if not os.path.exists(sys.argv[2] + "/world.mt"):
     with open(sys.argv[2] + "/world.mt", "w") as wo:
         wo.write("backend = sqlite3\n")
-        wo.write("gameid = minetest\n")
+        wo.write("gameid = MineClone2\n")
 
 if not os.path.exists(sys.argv[2] + "/worldmods"):
     os.makedirs(sys.argv[2]+"/worldmods")
