@@ -50,26 +50,6 @@ if not os.path.exists(sys.argv[2]+"/worldmods/mcimport/init.lua"):
         sn.write("        vm:update_map()\n")
         sn.write("end)\n\n")
 
-if not os.path.exists(sys.argv[2]+"/get-mods.sh"):
-    path = sys.argv[2]+"/get-mods.sh"
-    with open(path, "w") as md:
-        md.write("#!/bin/sh\n")
-        md.write("# run this script to automatically get all the required mods\n")
-        md.write("cd worldmods\n")
-        md.write("for mod in LNJ2/carpet minetest-mods/signs_lib minetest-mods/xdecor minetest-mods/plantlife_modpack Jeija/minetest-mod-mesecons pilzadam/nether minetest-mods/crops minetest-mods/quartz minetest-mods/biome_lib oOChainLynxOo/hardenedclay minetest-mods/lapis minetest-mods/flowerpot; do\n")
-        md.write("    echo \"Fetching: $mod\"\n")
-        md.write("    s=`basename $mod`\n")
-        md.write("    curl -q -L -o master.zip https://codeload.github.com/$mod/zip/master\n")
-        md.write("    unzip -qq master.zip\n")
-        md.write("    rm master.zip\n")
-        md.write("    mv $s-master $s\n")
-        md.write("done\n")
-        md.write("for ex in plantlife_modpack/dryplants plantlife_modpack/along_shore plantlife_modpack/molehills plantlife_modpack/woodsoils plantlife_modpack/bushes plantlife_modpack/bushes_classic plantlife_modpack/youngtrees plantlife_modpack/3dmushrooms plantlife_modpack/cavestuff plantlife_modpack/poisonivy plantlife_modpack/trunks; do\n");
-        md.write("    echo \"Pruning: $ex\"\n")
-        md.write("    rm -rf $ex\n")
-        md.write("done\n")
-    st = os.stat(path)
-    os.chmod(path, st.st_mode | stat.S_IXUSR)
 
 mcmap = MCMap(sys.argv[1])
 mtmap = MTMap(sys.argv[2])
@@ -79,4 +59,5 @@ mtmap.fromMCMap(mcmap, nimap, ct)
 mtmap.save()
 
 print("Conversion finished!\n")
-print("Run \"sh get-mods.sh\" in the new world folder to automatically download all required mods.")
+print("Please enjoy your new MineClone2 world!\n")
+print("Temporarily remove the 'MAPGEN' modpack from the MineClone2 subgame to play.")
