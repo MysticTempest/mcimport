@@ -145,7 +145,7 @@
 20	mcl_core:glass
 21	mcl_core:stone_with_lapis
 22	mcl_core:lapisblock
-23 mcl_dispensers:dispenser
+23 1	mcl_dispensers:dispenser
 24	mcl_core:sandstone	
 24 1 mcl_core:sandstonecarved
 24 2 mcl_core:sandstonesmooth		
@@ -561,14 +561,14 @@
 107 6	mcl_fences:fence_gate_open 1
 107 7	mcl_fences:fence_gate_open 3
 
-108 0	mcl_stairs:brick_block 1
-108 1	mcl_stairs:brick_block 3
-108 2	mcl_stairs:brick_block 2
-108 3	mcl_stairs:brick_block 0
-108 4	mcl_stairs:brick_block 23
-108 5	mcl_stairs:brick_block 21
-108 6	mcl_stairs:brick_block 22
-108 7	mcl_stairs:brick_block 20
+108 0	mcl_stairs:stair_brick_block 1
+108 1	mcl_stairs:stair_brick_block 3
+108 2	mcl_stairs:stair_brick_block 2
+108 3	mcl_stairs:stair_brick_block 0
+108 4	mcl_stairs:stair_brick_block 23
+108 5	mcl_stairs:stair_brick_block 21
+108 6	mcl_stairs:stair_brick_block 22
+108 7	mcl_stairs:stair_brick_block 20
 
 109 0	mcl_stairs:stair_stonebrick 1
 109 1	mcl_stairs:stair_stonebrick 3
@@ -755,8 +755,12 @@
 143 4	mesecons_button:button_wood_off 2
 143 5	mesecons_button:button_wood_off 10
 
-144	0	mcl_heads:skeleton
-144 4	mcl_heads:skeleton
+144	0	mcl_heads:skeleton 1
+144 1	mcl_heads:with_skeleton
+144 2	mcl_heads:zombie
+144 3	mcl_heads:steve 1
+144 4	mcl_heads:skeleton 1
+
 145	mcl_anvils:anvil
 
 
@@ -805,7 +809,7 @@
 
 157	mcl_minecarts:detector_rail_on					// activator rail
 
-158 mcl_droppers:dropper
+158 4	mcl_droppers:dropper
 
 159 0	mcl_colorblocks:hardened_clay_white
 159 1	mcl_colorblocks:hardened_clay_orange
@@ -877,8 +881,8 @@
 #endif
 
 
-165 mcl_core:slimeblock
-166 mcl_core:barrier
+165 0	mcl_core:slimeblock
+166 0	mcl_core:barrier
 
 167 0	mcl_doors:iron_trapdoor 2
 167 1	mcl_doors:iron_trapdoor 0
