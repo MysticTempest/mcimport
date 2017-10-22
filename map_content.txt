@@ -534,6 +534,35 @@
 98 2    mcl_core:stonebrickcracked
 98 3	mcl_core:stonebrickcarved
 
+
+99 0	mcl_mushrooms:brown_mushroom_block_pores_full
+99 1	mcl_mushrooms:brown_mushroom_block_cap_corner
+99 2	mcl_mushrooms:brown_mushroom_block_cap_side
+99 3	mcl_mushrooms:brown_mushroom_block_cap_corner
+99 4	mcl_mushrooms:brown_mushroom_block_cap_side
+99 5	mcl_mushrooms:brown_mushroom_block_cap_top
+99 6	mcl_mushrooms:brown_mushroom_block_cap_side
+99 7	mcl_mushrooms:brown_mushroom_block_cap_corner
+99 8	mcl_mushrooms:brown_mushroom_block_cap_side
+99 9	mcl_mushrooms:brown_mushroom_block_cap_corner
+99 10	mcl_mushrooms:brown_mushroom_block_stem
+99 14	mcl_mushrooms:brown_mushroom_block_cap_full
+99 15	mcl_mushrooms:brown_mushroom_block_stem_full
+100 0	mcl_mushrooms:red_mushroom_block_pores_full
+100 1	mcl_mushrooms:red_mushroom_block_cap_corner
+100 2	mcl_mushrooms:red_mushroom_block_cap_side
+100 3	mcl_mushrooms:red_mushroom_block_cap_corner
+100 4	mcl_mushrooms:red_mushroom_block_cap_side
+100 5	mcl_mushrooms:red_mushroom_block_cap_top
+100 6	mcl_mushrooms:red_mushroom_block_cap_side
+100 7	mcl_mushrooms:red_mushroom_block_cap_corner
+100 8	mcl_mushrooms:red_mushroom_block_cap_side
+100 9	mcl_mushrooms:red_mushroom_block_cap_corner
+100 10	mcl_mushrooms:red_mushroom_block_stem
+100 14	mcl_mushrooms:red_mushroom_block_cap_full
+100 15	mcl_mushrooms:red_mushroom_block_stem_full
+
+
 101	xpanes:bar_flat				// FIXME: rotation, shape
 102	xpanes:pane_white_flat		// FIXME: rotation, shape
 
@@ -1037,6 +1066,56 @@
 248 0	mcl_colorblocks:glazed_terracotta_green
 249 0	mcl_colorblocks:glazed_terracotta_red
 250 0	mcl_colorblocks:glazed_terracotta_black
+235 1	mcl_colorblocks:glazed_terracotta_white
+236 1	mcl_colorblocks:glazed_terracotta_orange
+237 1	mcl_colorblocks:glazed_terracotta_magenta
+238 1	mcl_colorblocks:glazed_terracotta_light_blue
+239 1	mcl_colorblocks:glazed_terracotta_yellow
+240 1	mcl_colorblocks:glazed_terracotta_lime
+241 1	mcl_colorblocks:glazed_terracotta_pink
+242 1	mcl_colorblocks:glazed_terracotta_grey
+243 1	mcl_colorblocks:glazed_terracotta_silver
+244 1	mcl_colorblocks:glazed_terracotta_cyan
+245 1	mcl_colorblocks:glazed_terracotta_purple
+246 1	mcl_colorblocks:glazed_terracotta_blue
+247 1	mcl_colorblocks:glazed_terracotta_brown
+248 1	mcl_colorblocks:glazed_terracotta_green
+249 1	mcl_colorblocks:glazed_terracotta_red
+250 1	mcl_colorblocks:glazed_terracotta_black
+235 2	mcl_colorblocks:glazed_terracotta_white
+236 2	mcl_colorblocks:glazed_terracotta_orange
+237 2	mcl_colorblocks:glazed_terracotta_magenta
+238 2	mcl_colorblocks:glazed_terracotta_light_blue
+239 2	mcl_colorblocks:glazed_terracotta_yellow
+240 2	mcl_colorblocks:glazed_terracotta_lime
+241 2	mcl_colorblocks:glazed_terracotta_pink
+242 2	mcl_colorblocks:glazed_terracotta_grey
+243 2	mcl_colorblocks:glazed_terracotta_silver
+244 2	mcl_colorblocks:glazed_terracotta_cyan
+245 2	mcl_colorblocks:glazed_terracotta_purple
+246 2	mcl_colorblocks:glazed_terracotta_blue
+247 2	mcl_colorblocks:glazed_terracotta_brown
+248 2	mcl_colorblocks:glazed_terracotta_green
+249 2	mcl_colorblocks:glazed_terracotta_red
+250 2	mcl_colorblocks:glazed_terracotta_black
+235 3	mcl_colorblocks:glazed_terracotta_white
+236 3	mcl_colorblocks:glazed_terracotta_orange
+237 3	mcl_colorblocks:glazed_terracotta_magenta
+238 3	mcl_colorblocks:glazed_terracotta_light_blue
+239 3	mcl_colorblocks:glazed_terracotta_yellow
+240 3	mcl_colorblocks:glazed_terracotta_lime
+241 3	mcl_colorblocks:glazed_terracotta_pink
+242 3	mcl_colorblocks:glazed_terracotta_grey
+243 3	mcl_colorblocks:glazed_terracotta_silver
+244 3	mcl_colorblocks:glazed_terracotta_cyan
+245 3	mcl_colorblocks:glazed_terracotta_purple
+246 3	mcl_colorblocks:glazed_terracotta_blue
+247 3	mcl_colorblocks:glazed_terracotta_brown
+248 3	mcl_colorblocks:glazed_terracotta_green
+249 3	mcl_colorblocks:glazed_terracotta_red
+250 3	mcl_colorblocks:glazed_terracotta_black
+
+
 
 
 251 0	mcl_colorblocks:concrete_white
@@ -1082,6 +1161,7 @@
 324 9	mcl_doors:wooden_door_t_1
 324 10	mcl_doors:wooden_door_t_1
 324 11	mcl_doors:wooden_door_t_1
+
 
 // Below here are non-MC blocks. We need to put these blocks in the
 // table to make translation a bit easier

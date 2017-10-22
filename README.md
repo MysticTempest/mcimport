@@ -1,7 +1,7 @@
 # mcimport
 # a fork of the original 'mcimport' for the MineClone2 subgame.
 
-This fork of mcimport converts a minecraft world into Minetest; specifically a MinClone2 subgame.
+This fork of mcimport converts a minecraft world into Minetest; specifically a MineClone2 subgame.
 
 **********
 You must remove the 'MAPGEN' folder from the MineClone2 mods folder. 
