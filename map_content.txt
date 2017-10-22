@@ -198,6 +198,9 @@
 33 12	mesecons_pistons:piston_normal_on 1
 33 13	mesecons_pistons:piston_normal_on 3
 
+34 1	mesecons_pistons:piston_up_pusher_normal
+34 9	mesecons_pistons:piston_up_pusher_sticky
+
 35 0	mcl_wool:white
 35 1	mcl_wool:orange
 35 2	mcl_wool:magenta
@@ -446,7 +449,8 @@
 	90	mcl_portals:portal
 #endif
 
-91 mcl_farming:pumpkin_face_light
+91 0	mcl_farming:pumpkin_face_light
+91 3	mcl_farming:pumpkin_face_light
 92 0	mcl_cake:cake
 
 93 0	mesecons_delayer:delayer_off_1 3
@@ -756,7 +760,7 @@
 143 5	mesecons_button:button_wood_off 10
 
 144	0	mcl_heads:skeleton 1
-144 1	mcl_heads:with_skeleton
+144 1	mcl_heads:wither_skeleton
 144 2	mcl_heads:zombie
 144 3	mcl_heads:steve 1
 144 4	mcl_heads:skeleton 1
@@ -935,7 +939,7 @@
 175 2	mcl_flowers:tallgrass
 175 4	mcl_flowers:rose_bush
 175 5	mcl_flowers:peony
-175 10	mcl_flowers:double_fern
+175 10	air
 
 
 176 mcl_banners:standing_banner
@@ -996,6 +1000,9 @@
 214 0	mcl_nether:nether_wart
 215 0	mcl_nether:red_nether_brick
 216 0	mcl_core:bone_block
+
+218 2	mcl_observers:observer
+218 3	mcl_observers:observer
 
 219 1	mcl_chests:white_shulker_box
 220 1	mcl_chests:orange_shulker_box
