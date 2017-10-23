@@ -7,9 +7,9 @@
 1 6	mcl_core:andesite_smooth    // polished andesite
 
 2	mcl_core:dirt_with_grass   //
-3	mcl_core:dirt
-3 1 mcl_core:coarse_dirt
-3 2 mcl_core:podzol
+3 0	mcl_core:dirt
+3 1	mcl_core:coarse_dirt
+3 2	mcl_core:podzol
 4	mcl_core:cobble
 
 #ifdef MORETREES
@@ -145,7 +145,18 @@
 20	mcl_core:glass
 21	mcl_core:stone_with_lapis
 22	mcl_core:lapisblock
+
 23 1	mcl_dispensers:dispenser
+23 2	mcl_dispensers:dispenser
+23 3	mcl_dispensers:dispenser
+23 4	mcl_dispensers:dispenser
+23 5	mcl_dispensers:dispenser
+23 6	mcl_dispensers:dispenser
+23 7	mcl_dispensers:dispenser
+23 8	mcl_dispensers:dispenser
+23 9	mcl_dispensers:dispenser
+23 10	mcl_dispensers:dispenser
+
 24 0	mcl_core:sandstone	
 24 1	mcl_core:sandstonecarved
 24 2	mcl_core:sandstonesmooth		
@@ -450,7 +461,10 @@
 #endif
 
 91 0	mcl_farming:pumpkin_face_light
+91 1	mcl_farming:pumpkin_face_light
+91 2	mcl_farming:pumpkin_face_light
 91 3	mcl_farming:pumpkin_face_light
+91 4	mcl_farming:pumpkin_face_light
 92 0	mcl_cake:cake
 
 93 0	mesecons_delayer:delayer_off_1 3
@@ -531,7 +545,7 @@
 
 98 0	mcl_core:stonebrick
 98 1	mcl_core:stonebrickmossy
-98 2    mcl_core:stonebrickcracked
+98 2	mcl_core:stonebrickcracked
 98 3	mcl_core:stonebrickcarved
 
 
@@ -636,7 +650,8 @@
 
 
 115 0	mcl_nether:nether_wart
-116	xdecor:enchantment_table
+//116 0	enchantment_table
+//117 0	brewing stand
 
 118 0	mcl_cauldrons:cauldron
 118 1	mcl_cauldrons:cauldron_1	// FIXME: should be 1/3 full
@@ -645,6 +660,10 @@
 
 119 0	mcl_portals:portal_end
 120 0	mcl_portals:end_portal_frame
+120 4	mcl_portals:end_portal_frame
+120 5	mcl_portals:end_portal_frame
+120 6	mcl_portals:end_portal_frame
+120 7	mcl_portals:end_portal_frame
 121 0	mcl_end:end_stone
 122 mcl_end:dragon_egg
 
@@ -695,7 +714,7 @@
 #endif
 
 
-127 mcl_cocoas:cocoa_2
+127 mcl_cocoas:cocoa_2 //need to figure out the rest of the cocoa growth stages
 
 128 0	mcl_stairs:stair_sandstone 1
 128 1	mcl_stairs:stair_sandstone 3
@@ -772,13 +791,28 @@
 #endif
 
 137	mesecons_commandblock:commandblock_off	// FIXME: formspec
-
+//138 0 beacon
 139 1	mcl_walls:mossycobble
 139	mcl_walls:cobble
 
 140	mcl_flowerpots:flower_pot		// code will plant right flower
 
+141 0	mcl_farming:carrot_1
+141 1	mcl_farming:carrot_2
+141 2	mcl_farming:carrot_3
+141 3	mcl_farming:carrot_4
+141 4	mcl_farming:carrot_5
+141 5	mcl_farming:carrot_6
+141 6	mcl_farming:carrot_7
 141 7	mcl_farming:carrot
+
+142 0	mcl_farming:potato_1
+142 1	mcl_farming:potato_2
+142 2	mcl_farming:potato_3
+142 3	mcl_farming:potato_4
+142 4	mcl_farming:potato_5
+142 5	mcl_farming:potato_6
+142 6	mcl_farming:potato_7
 142 7	mcl_farming:potato
 
 143 0	mesecons_button:button_wood_off 8
@@ -802,6 +836,12 @@
 146 4	mcl_chests:trapped_chest 1
 146 5	mcl_chests:trapped_chest 3
 
+//147 0	 weighted pressure plate (light)
+//148 0  weighted pressure plate (heavy)
+
+149 1	mcl_comparators:comparator_off_comp //need to fill in the rest of the comparator states
+150 1	mcl_comparators:comparator_on_comp //need to fill in the rest of the comparator states
+
 151 0	mesecons_solarpanel:solar_panel_off 1
 151 1	mesecons_solarpanel:solar_panel_on 1
 151 2	mesecons_solarpanel:solar_panel_on 1
@@ -821,7 +861,14 @@
 
 152	mesecons_torch:redstoneblock
 
-154 0	mcl_hoppers:hopper
+154 0	mcl_hoppers:hopper 0
+154 1	mcl_hoppers:hopper 2
+154 2	mcl_hoppers:hopper 3
+154 3	mcl_hoppers:hopper 4
+154 4	mcl_hoppers:hopper 5
+154 8	mcl_hoppers:hopper 0
+
+
 #ifdef QUARTZ
 	153	mcl_nether:quartz_ore
 	155 0	mcl_nether:quartz_block
@@ -881,8 +928,8 @@
 	
 161 mcl_core:acacialeaves
 161 1 mcl_core:darkleaves
-162 mcl_core:acaciatree
-162 1 mcl_core:darktree
+162	mcl_core:acaciatree
+162 1	mcl_core:darktree
 
 163 0	mcl_stairs:stair_acaciawood 1
 163 1	mcl_stairs:stair_acaciawood 3
@@ -1014,16 +1061,36 @@
 197	air					// door parts get fixed up in code
 
 198 0	mcl_end:end_rod
+198 1	mcl_end:end_rod	
+198 2	mcl_end:end_rod
+198 3	mcl_end:end_rod
+198 4	mcl_end:end_rod
+198 5	mcl_end:end_rod
+
 199 0	mcl_end:chorus_plant
 200 0	mcl_end:chorus_flower
 201 0	mcl_end:purpur_block
 202 0	mcl_end:purpur_pillar
-203 mcl_stairs:stair_purpur_block
-204 mcl_end:purpur_block
-205 mcl_stairs:slab_purpur_block
+
+203 0	mcl_stairs:stair_purpur_block 1
+203 1	mcl_stairs:stair_purpur_block 3
+203 2	mcl_stairs:stair_purpur_block 2
+203 3	mcl_stairs:stair_purpur_block 0
+203 4	mcl_stairs:stair_purpur_block 23
+203 5	mcl_stairs:stair_purpur_block 21
+203 6	mcl_stairs:stair_purpur_block 22
+203 7	mcl_stairs:stair_purpur_block 20
+
+204 0	mcl_end:purpur_block
+205 0	mcl_stairs:slab_purpur_block
 206 0	mcl_end:end_bricks
+207 0	mcl_farming:beetroot_0
+207 1	mcl_farming:beetroot_1
+207 2	mcl_farming:beetroot_2
 207 3	mcl_farming:beetroot
 208 0	mcl_core:grass_path
+
+//211 0,5 chain command block
 
 213 0	mcl_nether:magma
 214 0	mcl_nether:nether_wart
@@ -1270,3 +1337,182 @@
 967 14	mcl_doors:iron_door_t_1 2
 967 15	mcl_doors:iron_door_t_1 3
 
+
+
+968 0	mcl_doors:spruce_door_b_1 1
+968 1	mcl_doors:spruce_door_b_1 2
+968 2	mcl_doors:spruce_door_b_1 3
+968 3	mcl_doors:spruce_door_b_1 0
+968 4	mcl_doors:spruce_door_b_2 2
+968 5	mcl_doors:spruce_door_b_2 3
+968 6	mcl_doors:spruce_door_b_2 0
+968 7	mcl_doors:spruce_door_b_2 1
+968 8	mcl_doors:spruce_door_b_2 1
+968 9	mcl_doors:spruce_door_b_2 2
+968 10	mcl_doors:spruce_door_b_2 3
+968 11	mcl_doors:spruce_door_b_2 0
+968 12	mcl_doors:spruce_door_b_1 0
+968 13	mcl_doors:spruce_door_b_1 1
+968 14	mcl_doors:spruce_door_b_1 2
+968 15	mcl_doors:spruce_door_b_1 3
+
+969 0	mcl_doors:spruce_door_t_1 1
+969 1	mcl_doors:spruce_door_t_1 2
+969 2	mcl_doors:spruce_door_t_1 3
+969 3	mcl_doors:spruce_door_t_1 0
+969 4	mcl_doors:spruce_door_t_2 2
+969 5	mcl_doors:spruce_door_t_2 3
+969 6	mcl_doors:spruce_door_t_2 0
+969 7	mcl_doors:spruce_door_t_2 1
+969 8	mcl_doors:spruce_door_t_2 1
+969 9	mcl_doors:spruce_door_t_2 2
+969 10	mcl_doors:spruce_door_t_2 3
+969 11	mcl_doors:spruce_door_t_2 0
+969 12	mcl_doors:spruce_door_t_1 0
+969 13	mcl_doors:spruce_door_t_1 1
+969 14	mcl_doors:spruce_door_t_1 2
+969 15	mcl_doors:spruce_door_t_1 3
+
+
+
+970 0	mcl_doors:birch_door_b_1 1
+970 1	mcl_doors:birch_door_b_1 2
+970 2	mcl_doors:birch_door_b_1 3
+970 3	mcl_doors:birch_door_b_1 0
+970 4	mcl_doors:birch_door_b_2 2
+970 5	mcl_doors:birch_door_b_2 3
+970 6	mcl_doors:birch_door_b_2 0
+970 7	mcl_doors:birch_door_b_2 1
+970 8	mcl_doors:birch_door_b_2 1
+970 9	mcl_doors:birch_door_b_2 2
+970 10	mcl_doors:birch_door_b_2 3
+970 11	mcl_doors:birch_door_b_2 0
+970 12	mcl_doors:birch_door_b_1 0
+970 13	mcl_doors:birch_door_b_1 1
+970 14	mcl_doors:birch_door_b_1 2
+970 15	mcl_doors:birch_door_b_1 3
+
+971 0	mcl_doors:birch_door_t_1 1
+971 1	mcl_doors:birch_door_t_1 2
+971 2	mcl_doors:birch_door_t_1 3
+971 3	mcl_doors:birch_door_t_1 0
+971 4	mcl_doors:birch_door_t_2 2
+971 5	mcl_doors:birch_door_t_2 3
+971 6	mcl_doors:birch_door_t_2 0
+971 7	mcl_doors:birch_door_t_2 1
+971 8	mcl_doors:birch_door_t_2 1
+971 9	mcl_doors:birch_door_t_2 2
+971 10	mcl_doors:birch_door_t_2 3
+971 11	mcl_doors:birch_door_t_2 0
+971 12	mcl_doors:birch_door_t_1 0
+971 13	mcl_doors:birch_door_t_1 1
+971 14	mcl_doors:birch_door_t_1 2
+971 15	mcl_doors:birch_door_t_1 3
+
+
+
+972 0	mcl_doors:jungle_door_b_1 1
+972 1	mcl_doors:jungle_door_b_1 2
+972 2	mcl_doors:jungle_door_b_1 3
+972 3	mcl_doors:jungle_door_b_1 0
+972 4	mcl_doors:jungle_door_b_2 2
+972 5	mcl_doors:jungle_door_b_2 3
+972 6	mcl_doors:jungle_door_b_2 0
+972 7	mcl_doors:jungle_door_b_2 1
+972 8	mcl_doors:jungle_door_b_2 1
+972 9	mcl_doors:jungle_door_b_2 2
+972 10	mcl_doors:jungle_door_b_2 3
+972 11	mcl_doors:jungle_door_b_2 0
+972 12	mcl_doors:jungle_door_b_1 0
+972 13	mcl_doors:jungle_door_b_1 1
+972 14	mcl_doors:jungle_door_b_1 2
+972 15	mcl_doors:jungle_door_b_1 3
+
+973 0	mcl_doors:jungle_door_t_1 1
+973 1	mcl_doors:jungle_door_t_1 2
+973 2	mcl_doors:jungle_door_t_1 3
+973 3	mcl_doors:jungle_door_t_1 0
+973 4	mcl_doors:jungle_door_t_2 2
+973 5	mcl_doors:jungle_door_t_2 3
+973 6	mcl_doors:jungle_door_t_2 0
+973 7	mcl_doors:jungle_door_t_2 1
+973 8	mcl_doors:jungle_door_t_2 1
+973 9	mcl_doors:jungle_door_t_2 2
+973 10	mcl_doors:jungle_door_t_2 3
+973 11	mcl_doors:jungle_door_t_2 0
+973 12	mcl_doors:jungle_door_t_1 0
+973 13	mcl_doors:jungle_door_t_1 1
+973 14	mcl_doors:jungle_door_t_1 2
+973 15	mcl_doors:jungle_door_t_1 3
+
+
+
+974 0	mcl_doors:acacia_door_b_1 1
+974 1	mcl_doors:acacia_door_b_1 2
+974 2	mcl_doors:acacia_door_b_1 3
+974 3	mcl_doors:acacia_door_b_1 0
+974 4	mcl_doors:acacia_door_b_2 2
+974 5	mcl_doors:acacia_door_b_2 3
+974 6	mcl_doors:acacia_door_b_2 0
+974 7	mcl_doors:acacia_door_b_2 1
+974 8	mcl_doors:acacia_door_b_2 1
+974 9	mcl_doors:acacia_door_b_2 2
+974 10	mcl_doors:acacia_door_b_2 3
+974 11	mcl_doors:acacia_door_b_2 0
+974 12	mcl_doors:acacia_door_b_1 0
+974 13	mcl_doors:acacia_door_b_1 1
+974 14	mcl_doors:acacia_door_b_1 2
+974 15	mcl_doors:acacia_door_b_1 3
+
+975 0	mcl_doors:acacia_door_t_1 1
+975 1	mcl_doors:acacia_door_t_1 2
+975 2	mcl_doors:acacia_door_t_1 3
+975 3	mcl_doors:acacia_door_t_1 0
+975 4	mcl_doors:acacia_door_t_2 2
+975 5	mcl_doors:acacia_door_t_2 3
+975 6	mcl_doors:acacia_door_t_2 0
+975 7	mcl_doors:acacia_door_t_2 1
+975 8	mcl_doors:acacia_door_t_2 1
+975 9	mcl_doors:acacia_door_t_2 2
+975 10	mcl_doors:acacia_door_t_2 3
+975 11	mcl_doors:acacia_door_t_2 0
+975 12	mcl_doors:acacia_door_t_1 0
+975 13	mcl_doors:acacia_door_t_1 1
+975 14	mcl_doors:acacia_door_t_1 2
+975 15	mcl_doors:acacia_door_t_1 3
+
+
+
+976 0	mcl_doors:dark_oak_door_b_1 1
+976 1	mcl_doors:dark_oak_door_b_1 2
+976 2	mcl_doors:dark_oak_door_b_1 3
+976 3	mcl_doors:dark_oak_door_b_1 0
+976 4	mcl_doors:dark_oak_door_b_2 2
+976 5	mcl_doors:dark_oak_door_b_2 3
+976 6	mcl_doors:dark_oak_door_b_2 0
+976 7	mcl_doors:dark_oak_door_b_2 1
+976 8	mcl_doors:dark_oak_door_b_2 1
+976 9	mcl_doors:dark_oak_door_b_2 2
+976 10	mcl_doors:dark_oak_door_b_2 3
+976 11	mcl_doors:dark_oak_door_b_2 0
+976 12	mcl_doors:dark_oak_door_b_1 0
+976 13	mcl_doors:dark_oak_door_b_1 1
+976 14	mcl_doors:dark_oak_door_b_1 2
+976 15	mcl_doors:dark_oak_door_b_1 3
+
+977 0	mcl_doors:dark_oak_door_t_1 1
+977 1	mcl_doors:dark_oak_door_t_1 2
+977 2	mcl_doors:dark_oak_door_t_1 3
+977 3	mcl_doors:dark_oak_door_t_1 0
+977 4	mcl_doors:dark_oak_door_t_2 2
+977 5	mcl_doors:dark_oak_door_t_2 3
+977 6	mcl_doors:dark_oak_door_t_2 0
+977 7	mcl_doors:dark_oak_door_t_2 1
+977 8	mcl_doors:dark_oak_door_t_2 1
+977 9	mcl_doors:dark_oak_door_t_2 2
+977 10	mcl_doors:dark_oak_door_t_2 3
+977 11	mcl_doors:dark_oak_door_t_2 0
+977 12	mcl_doors:dark_oak_door_t_1 0
+977 13	mcl_doors:dark_oak_door_t_1 1
+977 14	mcl_doors:dark_oak_door_t_1 2
+977 15	mcl_doors:dark_oak_door_t_1 3
