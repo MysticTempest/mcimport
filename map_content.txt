@@ -230,10 +230,11 @@
 35 15	mcl_wool:black
 
 37	mcl_flowers:dandelion
-38 0,4	mcl_flowers:poppy
+38 0	mcl_flowers:poppy
 38 1	mcl_flowers:blue_orchid
 38 2	mcl_flowers:allium
 38 3	mcl_flowers:azure_bluet
+38 4	mcl_flowers:tulip_red
 38 5	mcl_flowers:tulip_orange
 38 6	mcl_flowers:tulip_white
 38 7	mcl_flowers:tulip_pink
@@ -264,32 +265,32 @@
 #endif
 
 44 0	mcl_stairs:slab_stone
-44 8	mcl_stairs:slab_stone 22
+44 8	mcl_stairs:slab_stone_top 22
 44 1	mcl_stairs:slab_sandstone
-44 9	mcl_stairs:slab_sandstone 22
+44 9	mcl_stairs:slab_sandstone_top 22
 44 2	mcl_stairs:slab_wood
-44 10	mcl_stairs:slab_wood 22
+44 10	mcl_stairs:slab_wood_top 22
 44 3	mcl_stairs:slab_cobble
-44 11	mcl_stairs:slab_cobble 22
+44 11	mcl_stairs:slab_cobble_top 22
 44 4	mcl_stairs:slab_brick_block
-44 12	mcl_stairs:slab_brick_block 22
+44 12	mcl_stairs:slab_brick_block_top 22
 44 5	mcl_stairs:slab_stonebrick
-44 13	mcl_stairs:slab_stonebrick 22
+44 13	mcl_stairs:slab_stonebrick_top 22
 
 #ifdef NETHER
 44 6	mcl_stairs:slab_nether_brick
-44 14	mcl_stairs:slab_nether_brick 22
+44 14	mcl_stairs:slab_nether_brick_top 22
 #else
 	44 6	mcl_stairs:slab_stonebrick
-	44 14	mcl_stairs:slab_stonebrick 22
+	44 14	mcl_stairs:slab_stonebrick_top 22
 #endif
 
 #ifdef QUARTZ
 	44 7	mcl_stairs:slab_quartzblock
-	44 15	mcl_stairs:slab_quartzblock 22
+	44 15	mcl_stairs:slab_quartzblock_top 22
 #else
 	44 7	mcl_stairs:slab_stonebrick
-	44 15	mcl_stairs:slab_stonebrick 22
+	44 15	mcl_stairs:slab_stonebrick_top 22
 #endif
 
 
@@ -697,17 +698,17 @@
 	125 5	moretrees:oak_planks
 
 	126 0	stairs:slab_wood
-	126 8	stairs:slab_wood 22
+	126 8	stairs:slab_wood_top 22
 	126 1	moretrees:slab_spruce_planks
-	126 9	moretrees:slab_spruce_planks 22
+	126 9	moretrees:slab_spruce_planks_top 22
 	126 2	moretrees:slab_birch_planks
-	126 10	moretrees:slab_birch_planks 22
+	126 10	moretrees:slab_birch_planks_top 22
 	126 3	moretrees:slab_sequoia_planks
-	126 11	moretrees:slab_sequoia_planks 22
+	126 11	moretrees:slab_sequoia_planks_top 22
 	126 4	moretrees:slab_fir_planks
-	126 12	moretrees:slab_fir_planks 22
+	126 12	moretrees:slab_fir_planks_top 22
 	126 5	moretrees:slab_oak_planks
-	126 13	moretrees:slab_oak_planks 22
+	126 13	moretrees:slab_oak_planks_top 22
 #else
 
 	125 0	mcl_core:wood
@@ -718,17 +719,17 @@
 	125 5	mcl_core:darkwood
 
 	126 0	mcl_stairs:slab_wood
-	126 8	mcl_stairs:slab_wood 22
+	126 8	mcl_stairs:slab_wood_top 22
 	126 1	mcl_stairs:slab_sprucewood
-	126 9	mcl_stairs:slab_sprucewood 22
+	126 9	mcl_stairs:slab_sprucewood_top 22
 	126 2	mcl_stairs:slab_birchwood
-	126 10	mcl_stairs:slab_birchwood 22
+	126 10	mcl_stairs:slab_birchwood_top 22
 	126 3	mcl_stairs:slab_junglewood
-	126 11	mcl_stairs:slab_junglewood 22
+	126 11	mcl_stairs:slab_junglewood_top 22
 	126 4	mcl_stairs:slab_acaciawood
-	126 12	mcl_stairs:slab_acaciawood 22
+	126 12	mcl_stairs:slab_acaciawood_top 22
 	126 5	mcl_stairs:slab_darkwood
-	126 13	mcl_stairs:slab_wood 22
+	126 13	mcl_stairs:slab_darkwood_top 22
 #endif
 
 
@@ -1077,8 +1078,8 @@
 
 181	mcl_core:redsandstone
 
-182 8	mcl_stairs:slab_redsandstone 22
-182	mcl_stairs:slab_redsandstone
+182 8	mcl_stairs:slab_redsandstone_top 22
+182 0	mcl_stairs:slab_redsandstone
 
 183	mcl_fences:fence_gate
 184	mcl_fences:spruce_fence_gate
@@ -1132,7 +1133,7 @@
 //211 0,5 chain command block
 
 213 0	mcl_nether:magma
-214 0	mcl_nether:nether_wart
+214 0	mcl_nether:nether_wart_block
 215 0	mcl_nether:red_nether_brick
 216 0	mcl_core:bone_block
 
