@@ -1,3 +1,44 @@
+// Documentation taken from: https://raw.githubusercontent.com/dgm3333/mcblocks/master/map_content.txt
+// the format of this file is:
+//MCID data	modname:blockname param2
+//17 0	mcblocks:Oak_Wood 4		//U
+
+// or with optional preprocessor commands
+//#if MORETREES
+//	18 4,12	default:leaves 1
+//#else
+//	17	default:tree	// TODO: Trunk orientation
+//#endif
+
+
+// !!!! WHITESPACE TYPE (space or tab) IS CRITICAL:- !!!!
+
+//    ({tab})MCID({space}MCData1(,MCData2(...))){tab}MTnodename({space}param2){tab}<==Everything beyond this tab is ignored
+//       tab characters at the beginning of the line are ignored.
+//    it is critical that tabs and spaces not be mixed up or the line won't be recognised correctly, 
+//       and the parsing may fail to progress beyond that point.
+// MCID and MCData must be separated by a space/s
+// MCData1,2,etc must be separated by commas but no spaces
+// there must also be no spaces before MCID or between MCData and the following tab
+// MCData must not be >=16, or the remainder of the file will be totally ignored
+// MCID/Data and MTnodename are separated by tabs
+// MTnodename and param2 are separated by a space/s
+//If MCData1 is omitted, the line will match MCIDs with MCData values from 0-15 (and any subsequent entries will be ignored)
+// Any data following '//' is parsed and not processed
+// preprocessor commands #if {NAME}, #else and #endif are recognised and intervening lines will be parsed 
+//       out or retained dependant on flags in the content.read_content call
+
+
+//Minetest uses these for direction
+//param2 	direction
+//0 		//U	y
+//1 		//D	-y
+//2 		//E	x
+//3 		//W	-x
+//4 		//N	z
+//5 		//S	-z
+
+
 1 0	mcl_core:stone				
 1 1	mcl_core:granite			
 1 2	mcl_core:granite_smooth     
