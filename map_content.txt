@@ -182,7 +182,7 @@
 
 
 19	mcl_sponges:sponge			
-19 1 mcl_sponges:sponge_wet
+19 1	mcl_sponges:sponge_wet
 20	mcl_core:glass
 21	mcl_core:stone_with_lapis
 22	mcl_core:lapisblock
@@ -289,7 +289,7 @@
 
 43 0	mcl_core:stone				// Double slabs
 43 1	mcl_core:sandstone
-43 2 	mcl_core:wood
+43 2	mcl_core:wood
 43 3	mcl_core:cobble
 43 4	mcl_core:brick_block
 43 5	mcl_core:stonebrick
@@ -619,8 +619,8 @@
 100 15	mcl_mushrooms:red_mushroom_block_stem_full
 
 
-101	xpanes:bar_flat				// FIXME: rotation, shape
-102	xpanes:pane_white_flat		// FIXME: rotation, shape
+101	xpanes:bar				// This seems to fix rotation issues.
+102	xpanes:pane_natural 	// Mostly fixed, as it fixes rotation issues. But, requires adding some groups to the "connects_to" list in xpanes.
 
 103	mcl_farming:melon				// rotates randomly
 

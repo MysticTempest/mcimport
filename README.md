@@ -1,14 +1,22 @@
 # mcimport
 # a fork of the original 'mcimport' for the MineClone2 subgame.
 
-This fork of mcimport converts a minecraft world into Minetest; specifically a MineClone2 subgame.
+This fork of mcimport converts a Minecraft world into Minetest; specifically a MineClone2 subgame.
 
 **********
-You must remove the 'MAPGEN' folder from the MineClone2 mods folder. 
-As it interferes with the pre-built world causing a crash.
+Notes
 **********
-Still has issues with vines, bars, panes being oriented wrong. 
+You must remove the 'MAPGEN' folder from the MineClone2 mods folder. 
+As it interferes with the pre-built world.
+
+Also, this still has a few issues with some nodes like vines being oriented wrong.
 And, the conversion list needs to be refined more for other data values for unique blocks.
+
+==================
+MineClone2 info:
+==================
+MineClone2 Sub-game forum link: https://forum.minetest.net/viewtopic.php?f=50&t=16407
+Git Repo: http://repo.or.cz/MineClone/MineClone2.git
 
 
 --------------------------------------------------
@@ -16,9 +24,8 @@ The process is offline. Minecraft should not be running on the world
 that is to be converted. The output should be an empty folder, and
 no map.sqlite should be present in the empty folder.
 
-The output is a world folder that is playable, permitted that the
-required minetest mods are installed. If mods are missing, you will
-encounter "Unknown" blocks in the minetest world.
+The output is a world folder that is playable, permitted that you're using the MineClone2 sub-game.
+This is a WIP, so you may still encounter "Unknown" blocks in the Minetest world.
 
 This mcimport fork was created to improve on the existing mcimport
 project, with one significant change: This form aims to create
@@ -54,7 +61,7 @@ not critical to users, and left out.
 
 License:
 
-Copyright (C) 2016 - Nore, dgm555, sofar and others
+Copyright (C) 2017 - Nore, dgm555, sofar, MysticTempest, and others
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
