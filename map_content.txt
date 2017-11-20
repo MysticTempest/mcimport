@@ -181,7 +181,7 @@
 #endif
 
 
-19	mcl_sponges:sponge			
+19 0	mcl_sponges:sponge
 19 1	mcl_sponges:sponge_wet
 20	mcl_core:glass
 21	mcl_core:stone_with_lapis
@@ -214,6 +214,7 @@
 26 11	mcl_beds:bed_red_top 1
 
 27	mcl_minecarts:golden_rail_on		// Powered rail
+27 8	mcl_minecarts:golden_rail
 28	mcl_minecarts:detector_rail_on				// Detector rail
 
 29 0	mesecons_pistons:piston_down_sticky_off
@@ -345,10 +346,10 @@
 49	mcl_core:obsidian
 
 50 0	mcl_torches:torch 1
-50 1	mcl_torches:torch 3
-50 2	mcl_torches:torch 2
-50 3	mcl_torches:torch 4
-50 4	mcl_torches:torch 5
+50 1	mcl_torches:torch_wall 3
+50 2	mcl_torches:torch_wall 2
+50 3	mcl_torches:torch_wall 4
+50 4	mcl_torches:torch_wall 5
 50 5	mcl_torches:torch 1
 
 51	mcl_fire:fire
@@ -387,7 +388,13 @@
 59 7	mcl_farming:wheat
 
 60 0	mcl_farming:soil
-60	mcl_farming:soil_wet
+60 1	mcl_farming:soil_wet
+60 2	mcl_farming:soil_wet
+60 3	mcl_farming:soil_wet
+60 4	mcl_farming:soil_wet
+60 5	mcl_farming:soil_wet
+60 6	mcl_farming:soil_wet
+60 7	mcl_farming:soil_wet
 
 61 2	mcl_furnaces:furnace 2			// TODO: contents
 61 3	mcl_furnaces:furnace 0
@@ -423,6 +430,7 @@
 65 5	mcl_core:ladder 3
 
 66	mcl_minecarts:rail
+
 
 67 0	mcl_stairs:stair_cobble 1
 67 1	mcl_stairs:stair_cobble 3
@@ -507,7 +515,14 @@
 91 2	mcl_farming:pumpkin_face_light
 91 3	mcl_farming:pumpkin_face_light
 91 4	mcl_farming:pumpkin_face_light
+
 92 0	mcl_cake:cake
+92 1	mcl_cake:cake_6
+92 2	mcl_cake:cake_5
+92 3	mcl_cake:cake_4
+92 4	mcl_cake:cake_3
+92 5	mcl_cake:cake_2
+92 6	mcl_cake:cake_1
 
 93 0	mesecons_delayer:delayer_off_1 3
 93 1	mesecons_delayer:delayer_off_1 0
@@ -631,7 +646,7 @@
 104 4	mcl_farming:pumpkin_5
 104 5	mcl_farming:pumpkin_6
 104 6	mcl_farming:pumpkin_7
-104 7	mcl_farming:pumpkin_unconnect
+104 7	mcl_farming:pumpkintige_unconnect
 
 105 0	mcl_farming:melontige_1
 105 1	mcl_farming:melontige_2
@@ -725,7 +740,7 @@
 120 6	mcl_portals:end_portal_frame
 120 7	mcl_portals:end_portal_frame
 121 0	mcl_end:end_stone
-122 mcl_end:dragon_egg
+122 0	mcl_end:dragon_egg
 
 
 123	mesecons_lightstone:lightstone_off
@@ -803,6 +818,9 @@
 130 4	mcl_chests:ender_chest 1
 130 5	mcl_chests:ender_chest 3
 
+//131 tripwire hook
+//132 tripwire
+
 133 0	mcl_core:emeraldblock
 
 #ifdef MORETREES
@@ -863,8 +881,9 @@
 
 137	mesecons_commandblock:commandblock_off	// FIXME: formspec
 //138 0 beacon
-139 1	mcl_walls:mossycobble
-139	mcl_walls:cobble
+
+139	mcl_walls:cobble_0
+139 1	mcl_walls:mossycobble_0
 
 140	mcl_flowerpots:flower_pot		// code will plant right flower
 
@@ -899,8 +918,9 @@
 144 3	mcl_heads:steve 1
 144 4	mcl_heads:skeleton 1
 
-145	mcl_anvils:anvil
-
+145 0	mcl_anvils:anvil
+145 1	mcl_anvils:anvil_damage_1
+145 2	mcl_anvils:anvil_damage_2
 
 146 2	mcl_chests:trapped_chest 2				// Trapped chest
 146 3	mcl_chests:trapped_chest 0
@@ -959,6 +979,7 @@
 #endif
 
 157	mcl_minecarts:activator_rail					// activator rail
+157 8	mcl_minecarts:activator_rail_on
 
 158 1	mcl_droppers:dropper
 158 2	mcl_droppers:dropper
@@ -1006,9 +1027,9 @@
 160 15	xpanes:pane_black_flat
 
 	
-161 mcl_core:acacialeaves
-161 1 mcl_core:darkleaves
-162	mcl_core:acaciatree
+161 0	mcl_core:acacialeaves
+161 1	mcl_core:darkleaves
+162	0	mcl_core:acaciatree
 162 1	mcl_core:darktree
 
 163 0	mcl_stairs:stair_acaciawood 1
@@ -1102,7 +1123,22 @@
 176 mcl_banners:standing_banner
 177 mcl_banners:hanging_banner
 
-178 0	mesecons_solarpanel:solar_panel_inverted_off   // 178 is an inverted daylight sensor, attempting to convert!
+178 0	mesecons_solarpanel:solar_panel_inverted_off 1
+178 1	mesecons_solarpanel:solar_panel_inverted_on 1
+178 2	mesecons_solarpanel:solar_panel_inverted_on 1
+178 3	mesecons_solarpanel:solar_panel_inverted_on 1
+178 4	mesecons_solarpanel:solar_panel_inverted_on 1
+178 5	mesecons_solarpanel:solar_panel_inverted_on 1
+178 6	mesecons_solarpanel:solar_panel_inverted_on 1
+178 7	mesecons_solarpanel:solar_panel_inverted_on 1
+178 8	mesecons_solarpanel:solar_panel_inverted_on 1
+178 9	mesecons_solarpanel:solar_panel_inverted_on 1
+178 10	mesecons_solarpanel:solar_panel_inverted_on 1
+178 11	mesecons_solarpanel:solar_panel_inverted_on 1
+178 12	mesecons_solarpanel:solar_panel_inverted_on 1
+178 13	mesecons_solarpanel:solar_panel_inverted_on 1
+178 14	mesecons_solarpanel:solar_panel_inverted_on 1
+178 15	mesecons_solarpanel:solar_panel_inverted_on 1
 
 179 1	mcl_core:redsandstonecarved
 179 2	mcl_core:redsandstonesmooth
@@ -1122,17 +1158,16 @@
 182 8	mcl_stairs:slab_redsandstone_top 22
 182 0	mcl_stairs:slab_redsandstone
 
-183	mcl_fences:fence_gate
-184	mcl_fences:spruce_fence_gate
-185	mcl_fences:birch_fence_gate
-186	mcl_fences:jungle_fence_gate
-186	mcl_fences:fence_gate
+183	mcl_fences:spruce_fence_gate
+184	mcl_fences:birch_fence_gate
+185	mcl_fences:jungle_fence_gate
+186	mcl_fences:dark_oak_fence_gate
 187	mcl_fences:acacia_fence_gate
 
 188	mcl_fences:spruce_fence
 189	mcl_fences:birch_fence
 190	mcl_fences:jungle_fence
-191	mcl_fences:fence
+191	mcl_fences:dark_oak_fence
 192	mcl_fences:acacia_fence
 
 193	air					// door parts get fixed up in code
@@ -1150,6 +1185,11 @@
 
 199 0	mcl_end:chorus_plant
 200 0	mcl_end:chorus_flower
+200 1	mcl_end:chorus_flower
+200 2	mcl_end:chorus_flower
+200 3	mcl_end:chorus_flower
+200 4	mcl_end:chorus_flower
+200 5	mcl_end:chorus_flower_dead
 201 0	mcl_end:purpur_block
 202 0	mcl_end:purpur_pillar
 
@@ -1173,10 +1213,16 @@
 
 //211 0,5 chain command block
 
+
+212 0	mcl_core:frosted_ice_0
+212 1	mcl_core:frosted_ice_1
+212 2	mcl_core:frosted_ice_2
+212 3	mcl_core:frosted_ice_3
+
 213 0	mcl_nether:magma
 214 0	mcl_nether:nether_wart_block
 215 0	mcl_nether:red_nether_brick
-216 0	mcl_core:bone_block
+216	mcl_core:bone_block
 
 218 2	mcl_observers:observer
 218 3	mcl_observers:observer
@@ -1326,15 +1372,15 @@
 940 2	mcl_flowerpots:flower_pot_mushroom_red
 940 3	mcl_flowerpots:flower_pot_cactus
 940 4	mcl_flowerpots:flower_pot_deadbush
-940 5	mcl_flowerpots:flower_pot_rose
-940 6	mcl_flowerpots:flower_pot_geranium
-940 7	mcl_flowerpots:flower_pot_viola
-940 8	mcl_flowerpots:flower_pot_geranium
-940 9	mcl_flowerpots:flower_pot_rose
-940 10	mcl_flowerpots:flower_pot_tulip
-940 11	mcl_flowerpots:flower_pot_dandelion_white
-940 12	mcl_flowerpots:flower_pot_viola
-940 13	mcl_flowerpots:flower_pot_dandelion_white
+940 5	mcl_flowerpots:flower_pot_poppy 
+940 6	mcl_flowerpots:flower_pot_blue_orchid 
+940 7	mcl_flowerpots:flower_pot_allium 
+940 8	mcl_flowerpots:flower_pot_azure_bluet
+940 9	mcl_flowerpots:flower_pot_tulip_red
+940 10	mcl_flowerpots:flower_pot_tulip_orange
+940 11	mcl_flowerpots:flower_pot_tulip_white 
+940 12	mcl_flowerpots:flower_pot_tulip_pink
+940 13	mcl_flowerpots:flower_pot_oxeye_daisy
 940 14	mcl_flowerpots:flower_pot_sapling
 940 15	mcl_flowerpots:flower_pot_sprucesapling
 // overflow
@@ -1347,7 +1393,7 @@
 941 2	mcl_flowerpots:flower_pot_acaciasapling
 941 3	mcl_flowerpots:flower_pot_sapling
 941 4	mcl_flowerpots:flower_pot_fern
-941 5	mcl_flowerpots:flower_pot_dandelion_white
+941 5	mcl_flowerpots:flower_pot_dandelion 
 
 964 0	mcl_doors:wooden_door_b_1 1
 964 1	mcl_doors:wooden_door_b_1 2
