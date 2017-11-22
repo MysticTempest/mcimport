@@ -365,11 +365,11 @@
 53 6	mcl_stairs:stair_wood 22
 53 7	mcl_stairs:stair_wood 20
 
-54 0	mcl_chests:chest 2				// map to default orientation == 2
-54 2	mcl_chests:chest 2				// TODO: contents
-54 3	mcl_chests:chest 0
-54 4	mcl_chests:chest 3
-54 5	mcl_chests:chest 1
+54 0	mcl_chests:chest 2				// map to default orientation == 2, TODO: contents
+54 2	mcl_chests:chest 2				//N
+54 3	mcl_chests:chest 0				//S
+54 4	mcl_chests:chest 1				//W
+54 5	mcl_chests:chest 3				//E
 
 55	mesecons:wire_00000000_off		// FIXME: manually fit wires based on neighbors
 
@@ -405,22 +405,22 @@
 62 4	mcl_furnaces:furnace_active 1
 62 5	mcl_furnaces:furnace_active 3
 
-63 0	mcl_signs:standing_sign 0			// small stick under sign
-63 1	mcl_signs:standing_sign 0			// doesn't rotate like MC's sign
-63 2	mcl_signs:standing_sign 0			// does so make an approximation for the
-63 3	mcl_signs:standing_sign 1			// rotation angles.
+63 0	mcl_signs:standing_sign 			// Signs mostly fixed now.
+63 1	mcl_signs:standing_sign22_5			//Thanks to the extra angles included in 'mcl_signs'.
+63 2	mcl_signs:standing_sign45			
+63 3	mcl_signs:standing_sign67_5			
 63 4	mcl_signs:standing_sign 1
-63 5	mcl_signs:standing_sign 1
-63 6	mcl_signs:standing_sign 1
-63 7	mcl_signs:standing_sign 2
-63 8	mcl_signs:standing_sign 2
-63 9	mcl_signs:standing_sign 2
-63 10	mcl_signs:standing_sign 2
-63 11	mcl_signs:standing_sign 3
+63 5	mcl_signs:standing_sign22_5 1
+63 6	mcl_signs:standing_sign45 3
+63 7	mcl_signs:standing_sign67_5 1
+63 8	mcl_signs:standing_sign
+63 9	mcl_signs:standing_sign22_5 
+63 10	mcl_signs:standing_sign45
+63 11	mcl_signs:standing_sign67_5 
 63 12	mcl_signs:standing_sign 3
-63 13	mcl_signs:standing_sign 3
-63 14	mcl_signs:standing_sign 3
-63 15	mcl_signs:standing_sign 0
+63 13	mcl_signs:standing_sign22_5 3
+63 14	mcl_signs:standing_sign45 3
+63 15	mcl_signs:standing_sign67_5 3
 
 64	air					// door parts get fixed up in code
 
@@ -484,12 +484,12 @@
 76 4	mesecons_torch:mesecon_torch_on 5
 76 5	mesecons_torch:mesecon_torch_on 1
 
-77 0	mesecons_button:button_stone_off 8
+77 0	mesecons_button:button_stone_off 0
 77 1	mesecons_button:button_stone_off 3
-77 2	mesecons_button:button_stone_off 1
+77 2	mesecons_button:button_stone_off 2
 77 3	mesecons_button:button_stone_off 4
-77 4	mesecons_button:button_stone_off 2
-77 5	mesecons_button:button_stone_off 10
+77 4	mesecons_button:button_stone_off 5
+77 5	mesecons_button:button_stone_off 1
 
 78	mcl_core:snow				// TODO: snow height
 
@@ -501,7 +501,10 @@
 84	mcl_jukebox:jukebox
 85	mcl_fences:fence
 
-86	mcl_farming:pumpkin_face				// rotates randomly
+86 0	mcl_farming:pumpkin_face 5 		//pumpkins still rotate randomly.
+86 1	mcl_farming:pumpkin_face 3
+86 2	mcl_farming:pumpkin_face 4
+86 3	mcl_farming:pumpkin_face 2	
 
 #ifdef NETHER
 	87	mcl_nether:netherrack
@@ -657,22 +660,10 @@
 105 6	mcl_farming:melontige_7
 105 7	mcl_farming:melontige_unconnect
 
-106 0	mcl_core:vine 4			// flat lying vine
-106 1	mcl_core:vine 3			// 1 - south
-106 2	mcl_core:vine 4			// 2 - west
-106 3	mcl_core:vine 4			// 4 - north
-106 4	mcl_core:vine 4			// 8 - east
-106 5	mcl_core:vine 4			// all other values are randomly
-106 6	mcl_core:vine 3			// picked to distribute orientation
-106 7	mcl_core:vine 4			// since we can't have vines occupy
-106 8	mcl_core:vine 8			// multiple directions like in MC
-106 9	mcl_core:vine 5
-106 10	mcl_core:vine 3
-106 11	mcl_core:vine 8
-106 12	mcl_core:vine 4
-106 13	mcl_core:vine 5
-106 14	mcl_core:vine 3
-106 15	mcl_core:vine 8
+106 1	mcl_core:vine 5			//Ignore errors about other 106 #'s.
+106 2	mcl_core:vine 3			//The bits are toggleable; meaning you don't need both.
+106 4	mcl_core:vine 4			//These 4 will cover all bases(N,E,S,W)
+106 8	mcl_core:vine 2	
 
 107 0	mcl_fences:fence_gate 2
 107 1	mcl_fences:fence_gate 0
@@ -813,8 +804,8 @@
 
 129	mcl_core:stone_with_emerald		
 
-130 2	mcl_chests:ender_chest 0
-130 3	mcl_chests:ender_chest 2
+130 2	mcl_chests:ender_chest 2
+130 3	mcl_chests:ender_chest 0
 130 4	mcl_chests:ender_chest 1
 130 5	mcl_chests:ender_chest 3
 
@@ -905,12 +896,12 @@
 142 6	mcl_farming:potato_7
 142 7	mcl_farming:potato
 
-143 0	mesecons_button:button_wood_off 8
+143 0	mesecons_button:button_wood_off 0
 143 1	mesecons_button:button_wood_off 3
-143 2	mesecons_button:button_wood_off 1
-143 3	mesecons_button:button_wood_off 0
-143 4	mesecons_button:button_wood_off 2
-143 5	mesecons_button:button_wood_off 10
+143 2	mesecons_button:button_wood_off 2
+143 3	mesecons_button:button_wood_off 4
+143 4	mesecons_button:button_wood_off 5
+143 5	mesecons_button:button_wood_off 1
 
 144	0	mcl_heads:skeleton 1
 144 1	mcl_heads:wither_skeleton
@@ -919,8 +910,19 @@
 144 4	mcl_heads:skeleton 1
 
 145 0	mcl_anvils:anvil
-145 1	mcl_anvils:anvil_damage_1
-145 2	mcl_anvils:anvil_damage_2
+145 1	mcl_anvils:anvil
+145 2	mcl_anvils:anvil
+145 3	mcl_anvils:anvil
+
+145 4	mcl_anvils:anvil_damage_1
+145 5	mcl_anvils:anvil_damage_1
+145 6	mcl_anvils:anvil_damage_1
+145 7	mcl_anvils:anvil_damage_1
+
+145 8	mcl_anvils:anvil_damage_2
+145 9	mcl_anvils:anvil_damage_2
+145 10	mcl_anvils:anvil_damage_2
+145 11	mcl_anvils:anvil_damage_2
 
 146 2	mcl_chests:trapped_chest 2				// Trapped chest
 146 3	mcl_chests:trapped_chest 0
@@ -1244,72 +1246,72 @@
 233 1	mcl_chests:red_shulker_box
 234 1	mcl_chests:black_shulker_box
 
-235 0	mcl_colorblocks:glazed_terracotta_white
-236 0	mcl_colorblocks:glazed_terracotta_orange
-237 0	mcl_colorblocks:glazed_terracotta_magenta
-238 0	mcl_colorblocks:glazed_terracotta_light_blue
-239 0	mcl_colorblocks:glazed_terracotta_yellow
-240 0	mcl_colorblocks:glazed_terracotta_lime
-241 0	mcl_colorblocks:glazed_terracotta_pink
-242 0	mcl_colorblocks:glazed_terracotta_grey
-243 0	mcl_colorblocks:glazed_terracotta_silver
-244 0	mcl_colorblocks:glazed_terracotta_cyan
-245 0	mcl_colorblocks:glazed_terracotta_purple
-246 0	mcl_colorblocks:glazed_terracotta_blue
-247 0	mcl_colorblocks:glazed_terracotta_brown
-248 0	mcl_colorblocks:glazed_terracotta_green
-249 0	mcl_colorblocks:glazed_terracotta_red
-250 0	mcl_colorblocks:glazed_terracotta_black
-235 1	mcl_colorblocks:glazed_terracotta_white
-236 1	mcl_colorblocks:glazed_terracotta_orange
-237 1	mcl_colorblocks:glazed_terracotta_magenta
-238 1	mcl_colorblocks:glazed_terracotta_light_blue
-239 1	mcl_colorblocks:glazed_terracotta_yellow
-240 1	mcl_colorblocks:glazed_terracotta_lime
-241 1	mcl_colorblocks:glazed_terracotta_pink
-242 1	mcl_colorblocks:glazed_terracotta_grey
-243 1	mcl_colorblocks:glazed_terracotta_silver
-244 1	mcl_colorblocks:glazed_terracotta_cyan
-245 1	mcl_colorblocks:glazed_terracotta_purple
-246 1	mcl_colorblocks:glazed_terracotta_blue
-247 1	mcl_colorblocks:glazed_terracotta_brown
-248 1	mcl_colorblocks:glazed_terracotta_green
-249 1	mcl_colorblocks:glazed_terracotta_red
-250 1	mcl_colorblocks:glazed_terracotta_black
-235 2	mcl_colorblocks:glazed_terracotta_white
-236 2	mcl_colorblocks:glazed_terracotta_orange
-237 2	mcl_colorblocks:glazed_terracotta_magenta
-238 2	mcl_colorblocks:glazed_terracotta_light_blue
-239 2	mcl_colorblocks:glazed_terracotta_yellow
-240 2	mcl_colorblocks:glazed_terracotta_lime
-241 2	mcl_colorblocks:glazed_terracotta_pink
-242 2	mcl_colorblocks:glazed_terracotta_grey
-243 2	mcl_colorblocks:glazed_terracotta_silver
-244 2	mcl_colorblocks:glazed_terracotta_cyan
-245 2	mcl_colorblocks:glazed_terracotta_purple
-246 2	mcl_colorblocks:glazed_terracotta_blue
-247 2	mcl_colorblocks:glazed_terracotta_brown
-248 2	mcl_colorblocks:glazed_terracotta_green
-249 2	mcl_colorblocks:glazed_terracotta_red
-250 2	mcl_colorblocks:glazed_terracotta_black
-235 3	mcl_colorblocks:glazed_terracotta_white
-236 3	mcl_colorblocks:glazed_terracotta_orange
-237 3	mcl_colorblocks:glazed_terracotta_magenta
-238 3	mcl_colorblocks:glazed_terracotta_light_blue
-239 3	mcl_colorblocks:glazed_terracotta_yellow
-240 3	mcl_colorblocks:glazed_terracotta_lime
-241 3	mcl_colorblocks:glazed_terracotta_pink
-242 3	mcl_colorblocks:glazed_terracotta_grey
-243 3	mcl_colorblocks:glazed_terracotta_silver
-244 3	mcl_colorblocks:glazed_terracotta_cyan
-245 3	mcl_colorblocks:glazed_terracotta_purple
-246 3	mcl_colorblocks:glazed_terracotta_blue
-247 3	mcl_colorblocks:glazed_terracotta_brown
-248 3	mcl_colorblocks:glazed_terracotta_green
-249 3	mcl_colorblocks:glazed_terracotta_red
-250 3	mcl_colorblocks:glazed_terracotta_black
 
-
+//still figuring out glazed terracotta orientations
+235 0	mcl_colorblocks:glazed_terracotta_white 4
+236 0	mcl_colorblocks:glazed_terracotta_orange 4
+237 0	mcl_colorblocks:glazed_terracotta_magenta 4
+238 0	mcl_colorblocks:glazed_terracotta_light_blue 4
+239 0	mcl_colorblocks:glazed_terracotta_yellow 4
+240 0	mcl_colorblocks:glazed_terracotta_lime 4
+241 0	mcl_colorblocks:glazed_terracotta_pink 4
+242 0	mcl_colorblocks:glazed_terracotta_grey 4
+243 0	mcl_colorblocks:glazed_terracotta_silver 4
+244 0	mcl_colorblocks:glazed_terracotta_cyan 4
+245 0	mcl_colorblocks:glazed_terracotta_purple 4
+246 0	mcl_colorblocks:glazed_terracotta_blue 4
+247 0	mcl_colorblocks:glazed_terracotta_brown 4
+248 0	mcl_colorblocks:glazed_terracotta_green 4
+249 0	mcl_colorblocks:glazed_terracotta_red 4
+250 0	mcl_colorblocks:glazed_terracotta_black 4
+235 1	mcl_colorblocks:glazed_terracotta_white 2
+236 1	mcl_colorblocks:glazed_terracotta_orange 2
+237 1	mcl_colorblocks:glazed_terracotta_magenta 2
+238 1	mcl_colorblocks:glazed_terracotta_light_blue 2
+239 1	mcl_colorblocks:glazed_terracotta_yellow 2
+240 1	mcl_colorblocks:glazed_terracotta_lime 2
+241 1	mcl_colorblocks:glazed_terracotta_pink 2
+242 1	mcl_colorblocks:glazed_terracotta_grey 2
+243 1	mcl_colorblocks:glazed_terracotta_silver 2
+244 1	mcl_colorblocks:glazed_terracotta_cyan 2
+245 1	mcl_colorblocks:glazed_terracotta_purple 2
+246 1	mcl_colorblocks:glazed_terracotta_blue 2
+247 1	mcl_colorblocks:glazed_terracotta_brown 2
+248 1	mcl_colorblocks:glazed_terracotta_green 2
+249 1	mcl_colorblocks:glazed_terracotta_red 2
+250 1	mcl_colorblocks:glazed_terracotta_black 2
+235 2	mcl_colorblocks:glazed_terracotta_white 5
+236 2	mcl_colorblocks:glazed_terracotta_orange 5
+237 2	mcl_colorblocks:glazed_terracotta_magenta 5
+238 2	mcl_colorblocks:glazed_terracotta_light_blue 5
+239 2	mcl_colorblocks:glazed_terracotta_yellow 5
+240 2	mcl_colorblocks:glazed_terracotta_lime 5
+241 2	mcl_colorblocks:glazed_terracotta_pink 5
+242 2	mcl_colorblocks:glazed_terracotta_grey 5
+243 2	mcl_colorblocks:glazed_terracotta_silver 5
+244 2	mcl_colorblocks:glazed_terracotta_cyan 5
+245 2	mcl_colorblocks:glazed_terracotta_purple 5
+246 2	mcl_colorblocks:glazed_terracotta_blue 5
+247 2	mcl_colorblocks:glazed_terracotta_brown 5
+248 2	mcl_colorblocks:glazed_terracotta_green 5
+249 2	mcl_colorblocks:glazed_terracotta_red 5
+250 2	mcl_colorblocks:glazed_terracotta_black 5
+235 3	mcl_colorblocks:glazed_terracotta_white 3
+236 3	mcl_colorblocks:glazed_terracotta_orange 3
+237 3	mcl_colorblocks:glazed_terracotta_magenta 3
+238 3	mcl_colorblocks:glazed_terracotta_light_blue 3
+239 3	mcl_colorblocks:glazed_terracotta_yellow 3
+240 3	mcl_colorblocks:glazed_terracotta_lime 3
+241 3	mcl_colorblocks:glazed_terracotta_pink 3
+242 3	mcl_colorblocks:glazed_terracotta_grey 3
+243 3	mcl_colorblocks:glazed_terracotta_silver 3
+244 3	mcl_colorblocks:glazed_terracotta_cyan 3
+245 3	mcl_colorblocks:glazed_terracotta_purple 3
+246 3	mcl_colorblocks:glazed_terracotta_blue 3
+247 3	mcl_colorblocks:glazed_terracotta_brown 3
+248 3	mcl_colorblocks:glazed_terracotta_green 3
+249 3	mcl_colorblocks:glazed_terracotta_red 3
+250 3	mcl_colorblocks:glazed_terracotta_black 3
 
 
 251 0	mcl_colorblocks:concrete_white
