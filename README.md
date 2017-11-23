@@ -3,21 +3,17 @@
 
 This fork of mcimport converts a Minecraft world into Minetest; specifically a MineClone2 subgame.
 
-**********
-Notes
-**********
+##Notes
+
 You must remove the 'MAPGEN' folder from the MineClone2 mods folder. 
 As it interferes with the pre-built world.
 
-Also, this still has a few issues with some nodes like vines being oriented wrong.
-And, the conversion list needs to be refined more for other data values for unique blocks.
+This is a WIP; so the conversion list is continually being refined for better conversions.
 
-==================
-MineClone2 info:
-==================
-MineClone2 Sub-game forum link: https://forum.minetest.net/viewtopic.php?f=50&t=16407
-Git Repo: http://repo.or.cz/MineClone/MineClone2.git
 
+##MineClone 2 Info: 
+* [Wuzzy's MineClone2 Sub-game forum link](https://forum.minetest.net/viewtopic.php?f=50&t=16407)
+* [Wuzzy's MineClone2 Repo](http://repo.or.cz/MineClone/MineClone2.git)
 
 --------------------------------------------------
 The process is offline. Minecraft should not be running on the world
@@ -46,8 +42,8 @@ that is friendly for users performing a one-time conversion.
 
 - some flowers are approximations
 - double plants may end up being single node blocks
-- until fixed, beds, doors, fences, walls are likely broken
-- signs convert, but MT can't rotate them in 30 degree angles
+- until fixed, fences, walls & other items are likely broken
+
 
 There are a large number of things that are just never going to
 be convertable, and so the following will likely never work and

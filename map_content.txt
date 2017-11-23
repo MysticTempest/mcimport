@@ -610,28 +610,28 @@
 
 
 99 0	mcl_mushrooms:brown_mushroom_block_pores_full
-99 1	mcl_mushrooms:brown_mushroom_block_cap_corner
-99 2	mcl_mushrooms:brown_mushroom_block_cap_side
-99 3	mcl_mushrooms:brown_mushroom_block_cap_corner
-99 4	mcl_mushrooms:brown_mushroom_block_cap_side
+99 1	mcl_mushrooms:brown_mushroom_block_cap_corner 5
+99 2	mcl_mushrooms:brown_mushroom_block_cap_side 2
+99 3	mcl_mushrooms:brown_mushroom_block_cap_corner 3
+99 4	mcl_mushrooms:brown_mushroom_block_cap_side 1
 99 5	mcl_mushrooms:brown_mushroom_block_cap_top
-99 6	mcl_mushrooms:brown_mushroom_block_cap_side
-99 7	mcl_mushrooms:brown_mushroom_block_cap_corner
+99 6	mcl_mushrooms:brown_mushroom_block_cap_side 3
+99 7	mcl_mushrooms:brown_mushroom_block_cap_corner 1
 99 8	mcl_mushrooms:brown_mushroom_block_cap_side
-99 9	mcl_mushrooms:brown_mushroom_block_cap_corner
+99 9	mcl_mushrooms:brown_mushroom_block_cap_corner 0
 99 10	mcl_mushrooms:brown_mushroom_block_stem
 99 14	mcl_mushrooms:brown_mushroom_block_cap_full
 99 15	mcl_mushrooms:brown_mushroom_block_stem_full
 100 0	mcl_mushrooms:red_mushroom_block_pores_full
-100 1	mcl_mushrooms:red_mushroom_block_cap_corner
-100 2	mcl_mushrooms:red_mushroom_block_cap_side
-100 3	mcl_mushrooms:red_mushroom_block_cap_corner
-100 4	mcl_mushrooms:red_mushroom_block_cap_side
+100 1	mcl_mushrooms:red_mushroom_block_cap_corner 5
+100 2	mcl_mushrooms:red_mushroom_block_cap_side 2
+100 3	mcl_mushrooms:red_mushroom_block_cap_corner 3
+100 4	mcl_mushrooms:red_mushroom_block_cap_side 1
 100 5	mcl_mushrooms:red_mushroom_block_cap_top
-100 6	mcl_mushrooms:red_mushroom_block_cap_side
-100 7	mcl_mushrooms:red_mushroom_block_cap_corner
+100 6	mcl_mushrooms:red_mushroom_block_cap_side 3
+100 7	mcl_mushrooms:red_mushroom_block_cap_corner 1
 100 8	mcl_mushrooms:red_mushroom_block_cap_side
-100 9	mcl_mushrooms:red_mushroom_block_cap_corner
+100 9	mcl_mushrooms:red_mushroom_block_cap_corner 0
 100 10	mcl_mushrooms:red_mushroom_block_stem
 100 14	mcl_mushrooms:red_mushroom_block_cap_full
 100 15	mcl_mushrooms:red_mushroom_block_stem_full
@@ -725,11 +725,16 @@
 118 3	mcl_cauldrons:cauldron_3	//  Full
 
 119 0	mcl_portals:portal_end
+
 120 0	mcl_portals:end_portal_frame
-120 4	mcl_portals:end_portal_frame
-120 5	mcl_portals:end_portal_frame
-120 6	mcl_portals:end_portal_frame
-120 7	mcl_portals:end_portal_frame
+120 1	mcl_portals:end_portal_frame
+120 2	mcl_portals:end_portal_frame
+120 3	mcl_portals:end_portal_frame
+120 4	mcl_portals:end_portal_frame_eye
+120 5	mcl_portals:end_portal_frame_eye
+120 6	mcl_portals:end_portal_frame_eye
+120 7	mcl_portals:end_portal_frame_eye
+
 121 0	mcl_end:end_stone
 122 0	mcl_end:dragon_egg
 
@@ -903,11 +908,11 @@
 143 4	mesecons_button:button_wood_off 5
 143 5	mesecons_button:button_wood_off 1
 
-144	0	mcl_heads:skeleton 1
-144 1	mcl_heads:wither_skeleton
-144 2	mcl_heads:zombie
-144 3	mcl_heads:steve 1
-144 4	mcl_heads:skeleton 1
+144 1	mcl_heads:steve
+144 2	mcl_heads:steve 4
+144 3	mcl_heads:steve 5
+144 4	mcl_heads:steve 2
+144 5	mcl_heads:steve 3
 
 145 0	mcl_anvils:anvil
 145 1	mcl_anvils:anvil
@@ -1122,8 +1127,13 @@
 175 10	air
 
 
+//todo:properly map banners.
 176 mcl_banners:standing_banner
-177 mcl_banners:hanging_banner
+177 2	mcl_banners:hanging_banner 5
+177 3	mcl_banners:hanging_banner 4
+177 4	mcl_banners:hanging_banner 2
+177 5	mcl_banners:hanging_banner 3
+
 
 178 0	mesecons_solarpanel:solar_panel_inverted_off 1
 178 1	mesecons_solarpanel:solar_panel_inverted_on 1
@@ -1212,6 +1222,8 @@
 207 2	mcl_farming:beetroot_2
 207 3	mcl_farming:beetroot
 208 0	mcl_core:grass_path
+
+
 
 //211 0,5 chain command block
 
@@ -1644,3 +1656,4 @@
 977 13	mcl_doors:dark_oak_door_t_1 1
 977 14	mcl_doors:dark_oak_door_t_1 2
 977 15	mcl_doors:dark_oak_door_t_1 3
+
