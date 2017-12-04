@@ -665,14 +665,14 @@
 106 4	mcl_core:vine 4			//These 4 will cover all bases(N,E,S,W)
 106 8	mcl_core:vine 2	
 
-107 0	mcl_fences:fence_gate 2
-107 1	mcl_fences:fence_gate 0
-107 2	mcl_fences:fence_gate 1
-107 3	mcl_fences:fence_gate 3
+107 0	mcl_fences:fence_gate 2         
+107 1	mcl_fences:fence_gate 3         
+107 2	mcl_fences:fence_gate 0         
+107 3	mcl_fences:fence_gate 1         
 107 4	mcl_fences:fence_gate_open 2
-107 5	mcl_fences:fence_gate_open 0
-107 6	mcl_fences:fence_gate_open 1
-107 7	mcl_fences:fence_gate_open 3
+107 5	mcl_fences:fence_gate_open 3
+107 6	mcl_fences:fence_gate_open 0
+107 7	mcl_fences:fence_gate_open 1
 
 108 0	mcl_stairs:stair_brick_block 1
 108 1	mcl_stairs:stair_brick_block 3
@@ -1124,7 +1124,7 @@
 175 3	mcl_flowers:double_fern
 175 4	mcl_flowers:rose_bush
 175 5	mcl_flowers:peony
-175 10	air
+175 10	air  //needs to handled in code as it replaces all top halves.
 
 
 //todo:properly map banners.
@@ -1170,11 +1170,52 @@
 182 8	mcl_stairs:slab_redsandstone_top 22
 182 0	mcl_stairs:slab_redsandstone
 
-183	mcl_fences:spruce_fence_gate
-184	mcl_fences:birch_fence_gate
-185	mcl_fences:jungle_fence_gate
-186	mcl_fences:dark_oak_fence_gate
-187	mcl_fences:acacia_fence_gate
+
+183 0	mcl_fences:spruce_fence_gate 2
+183 1	mcl_fences:spruce_fence_gate 3
+183 2	mcl_fences:spruce_fence_gate 0
+183 3	mcl_fences:spruce_fence_gate 1
+183 4	mcl_fences:spruce_fence_gate_open 2
+183 5	mcl_fences:spruce_fence_gate_open 3
+183 6	mcl_fences:spruce_fence_gate_open 0
+183 7	mcl_fences:spruce_fence_gate_open 1
+
+184 0	mcl_fences:birch_fence_gate 2
+184 1	mcl_fences:birch_fence_gate 3
+184 2	mcl_fences:birch_fence_gate 0
+184 3	mcl_fences:birch_fence_gate 1
+184 4	mcl_fences:birch_fence_gate_open 2
+184 5	mcl_fences:birch_fence_gate_open 3
+184 6	mcl_fences:birch_fence_gate_open 0
+184 7	mcl_fences:birch_fence_gate_open 1
+
+185 0	mcl_fences:jungle_fence_gate 2
+185 1	mcl_fences:jungle_fence_gate 3
+185 2	mcl_fences:jungle_fence_gate 0
+185 3	mcl_fences:jungle_fence_gate 1
+185 4	mcl_fences:jungle_fence_gate_open 2
+185 5	mcl_fences:jungle_fence_gate_open 3
+185 6	mcl_fences:jungle_fence_gate_open 0
+185 7	mcl_fences:jungle_fence_gate_open 1
+
+186 0	mcl_fences:dark_oak_fence_gate 2
+186 1	mcl_fences:dark_oak_fence_gate 3
+186 2	mcl_fences:dark_oak_fence_gate 0
+186 3	mcl_fences:dark_oak_fence_gate 1
+186 4	mcl_fences:dark_oak_fence_gate_open 2
+186 5	mcl_fences:dark_oak_fence_gate_open 3
+186 6	mcl_fences:dark_oak_fence_gate_open 0
+186 7	mcl_fences:dark_oak_fence_gate_open 1
+
+187 0	mcl_fences:acacia_fence_gate 2
+187 1	mcl_fences:acacia_fence_gate 3
+187 2	mcl_fences:acacia_fence_gate 0
+187 3	mcl_fences:acacia_fence_gate 1
+187 4	mcl_fences:acacia_fence_gate_open 2
+187 5	mcl_fences:acacia_fence_gate_open 3
+187 6	mcl_fences:acacia_fence_gate_open 0
+187 7	mcl_fences:acacia_fence_gate_open 1
+
 
 188	mcl_fences:spruce_fence
 189	mcl_fences:birch_fence
@@ -1259,39 +1300,39 @@
 234 1	mcl_chests:black_shulker_box
 
 
-//still figuring out glazed terracotta orientations
-235 0	mcl_colorblocks:glazed_terracotta_white 4
-236 0	mcl_colorblocks:glazed_terracotta_orange 4
-237 0	mcl_colorblocks:glazed_terracotta_magenta 4
-238 0	mcl_colorblocks:glazed_terracotta_light_blue 4
-239 0	mcl_colorblocks:glazed_terracotta_yellow 4
-240 0	mcl_colorblocks:glazed_terracotta_lime 4
-241 0	mcl_colorblocks:glazed_terracotta_pink 4
-242 0	mcl_colorblocks:glazed_terracotta_grey 4
-243 0	mcl_colorblocks:glazed_terracotta_silver 4
-244 0	mcl_colorblocks:glazed_terracotta_cyan 4
-245 0	mcl_colorblocks:glazed_terracotta_purple 4
-246 0	mcl_colorblocks:glazed_terracotta_blue 4
-247 0	mcl_colorblocks:glazed_terracotta_brown 4
-248 0	mcl_colorblocks:glazed_terracotta_green 4
-249 0	mcl_colorblocks:glazed_terracotta_red 4
-250 0	mcl_colorblocks:glazed_terracotta_black 4
-235 1	mcl_colorblocks:glazed_terracotta_white 2
-236 1	mcl_colorblocks:glazed_terracotta_orange 2
-237 1	mcl_colorblocks:glazed_terracotta_magenta 2
-238 1	mcl_colorblocks:glazed_terracotta_light_blue 2
-239 1	mcl_colorblocks:glazed_terracotta_yellow 2
-240 1	mcl_colorblocks:glazed_terracotta_lime 2
-241 1	mcl_colorblocks:glazed_terracotta_pink 2
-242 1	mcl_colorblocks:glazed_terracotta_grey 2
-243 1	mcl_colorblocks:glazed_terracotta_silver 2
-244 1	mcl_colorblocks:glazed_terracotta_cyan 2
-245 1	mcl_colorblocks:glazed_terracotta_purple 2
-246 1	mcl_colorblocks:glazed_terracotta_blue 2
-247 1	mcl_colorblocks:glazed_terracotta_brown 2
-248 1	mcl_colorblocks:glazed_terracotta_green 2
-249 1	mcl_colorblocks:glazed_terracotta_red 2
-250 1	mcl_colorblocks:glazed_terracotta_black 2
+
+235 0	mcl_colorblocks:glazed_terracotta_white 0
+236 0	mcl_colorblocks:glazed_terracotta_orange 0
+237 0	mcl_colorblocks:glazed_terracotta_magenta 0
+238 0	mcl_colorblocks:glazed_terracotta_light_blue 0
+239 0	mcl_colorblocks:glazed_terracotta_yellow 0
+240 0	mcl_colorblocks:glazed_terracotta_lime 0
+241 0	mcl_colorblocks:glazed_terracotta_pink 0
+242 0	mcl_colorblocks:glazed_terracotta_grey 0
+243 0	mcl_colorblocks:glazed_terracotta_silver 0
+244 0	mcl_colorblocks:glazed_terracotta_cyan 0
+245 0	mcl_colorblocks:glazed_terracotta_purple 0
+246 0	mcl_colorblocks:glazed_terracotta_blue 0
+247 0	mcl_colorblocks:glazed_terracotta_brown 0
+248 0	mcl_colorblocks:glazed_terracotta_green 0
+249 0	mcl_colorblocks:glazed_terracotta_red 0
+250 0	mcl_colorblocks:glazed_terracotta_black 0
+235 1	mcl_colorblocks:glazed_terracotta_white 1
+236 1	mcl_colorblocks:glazed_terracotta_orange 1
+237 1	mcl_colorblocks:glazed_terracotta_magenta 1
+238 1	mcl_colorblocks:glazed_terracotta_light_blue 1
+239 1	mcl_colorblocks:glazed_terracotta_yellow 1
+240 1	mcl_colorblocks:glazed_terracotta_lime 1
+241 1	mcl_colorblocks:glazed_terracotta_pink 1
+242 1	mcl_colorblocks:glazed_terracotta_grey 1
+243 1	mcl_colorblocks:glazed_terracotta_silver 1
+244 1	mcl_colorblocks:glazed_terracotta_cyan 1
+245 1	mcl_colorblocks:glazed_terracotta_purple 1
+246 1	mcl_colorblocks:glazed_terracotta_blue 1
+247 1	mcl_colorblocks:glazed_terracotta_brown 1
+248 1	mcl_colorblocks:glazed_terracotta_green 1
+249 1	mcl_colorblocks:glazed_terracotta_red 1
+250 1	mcl_colorblocks:glazed_terracotta_black 1
 235 2	mcl_colorblocks:glazed_terracotta_white 5
 236 2	mcl_colorblocks:glazed_terracotta_orange 5
 237 2	mcl_colorblocks:glazed_terracotta_magenta 5
