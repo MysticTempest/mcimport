@@ -4,11 +4,8 @@
 This fork of mcimport converts a Minecraft world into Minetest; specifically a MineClone2 subgame.
 
 ##Notes
-
-You must remove the 'MAPGEN' folder from the MineClone2 mods folder. 
-As it interferes with the pre-built world.
-
-This is a WIP; so the conversion list is continually being refined for better conversions.
+Compatible with Minecraft Worlds up to & including v1.12
+This is a WIP; so the conversion list is continually being refined for more accurate conversions.
 
 
 ##MineClone 2 Info: 

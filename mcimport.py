@@ -59,5 +59,5 @@ mtmap.fromMCMap(mcmap, nimap, ct)
 mtmap.save()
 
 print("Conversion finished!\n")
-print("Please enjoy your new MineClone2 world!\n")
-print("Temporarily remove the 'MAPGEN' modpack from the MineClone2 subgame to play.")
+print("Please enjoy your new MineClone2 world!")
+
