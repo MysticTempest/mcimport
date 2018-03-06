@@ -259,16 +259,16 @@
 	18 7,15	mcl_core:jungleleaves 1
 	161 0,8	mcl_core:acacialeaves
 	161 4,12	mcl_core:acacialeaves 1
-	161 1,9	mcl_core:leaves
-	161 5,13	mcl_core:leaves 1
+	161 1,9	mcl_core:darkleaves
+	161 5,13	mcl_core:darkleaves 1
 	162 0	mcl_core:acaciatree 0
 	162 4	mcl_core:acaciatree 18
 	162 8	mcl_core:acaciatree 9
-	162 1	mcl_core:tree 0
-	162 5	mcl_core:tree 18
-	162 9	mcl_core:tree 9
+	162 1	mcl_core:darktree 0
+	162 5	mcl_core:darktree 18
+	162 9	mcl_core:darktree 9
 	162 12	mcl_core:acaciatree
-	162 13	mcl_core:tree
+	162 13	mcl_core:darktree
 #endif
 
 
@@ -306,9 +306,33 @@
 26 10	mcl_beds:bed_red_top 0
 26 11	mcl_beds:bed_red_top 1
 
-27	mcl_minecarts:golden_rail_on		// Powered rail
-27 8	mcl_minecarts:golden_rail
-28	mcl_minecarts:detector_rail_on				// Detector rail
+// Powered rail
+27 0	mcl_minecarts:golden_rail
+27 1	mcl_minecarts:golden_rail
+27 2	mcl_minecarts:golden_rail
+27 3	mcl_minecarts:golden_rail
+27 4	mcl_minecarts:golden_rail
+27 5	mcl_minecarts:golden_rail
+27 8	mcl_minecarts:golden_rail_on
+27 9	mcl_minecarts:golden_rail_on
+27 10	mcl_minecarts:golden_rail_on
+27 11	mcl_minecarts:golden_rail_on
+27 12	mcl_minecarts:golden_rail_on	
+27 13	mcl_minecarts:golden_rail_on	
+
+// Detector rail
+28 0	mcl_minecarts:detector_rail
+28 1	mcl_minecarts:detector_rail
+28 2	mcl_minecarts:detector_rail
+28 3	mcl_minecarts:detector_rail
+28 4	mcl_minecarts:detector_rail
+28 5	mcl_minecarts:detector_rail
+28 8	mcl_minecarts:detector_rail_on
+28 9	mcl_minecarts:detector_rail_on
+28 10	mcl_minecarts:detector_rail_on
+28 11	mcl_minecarts:detector_rail_on
+28 12	mcl_minecarts:detector_rail_on
+28 13	mcl_minecarts:detector_rail_on
 
 //sticky pistons
 29 0	mesecons_pistons:piston_down_sticky_off
@@ -477,7 +501,22 @@
 54 4	mcl_chests:chest 1				//W
 54 5	mcl_chests:chest 3				//E
 
-55	mesecons:wire_00000000_off		// FIXME: manually fit wires based on neighbors
+55 0	mesecons:wire_00000000_off		// FIXME: manually fit wires based on neighbors
+55 1	mesecons:wire_00000000_on
+55 2	mesecons:wire_00000000_on
+55 3	mesecons:wire_00000000_on
+55 4	mesecons:wire_00000000_on
+55 5	mesecons:wire_00000000_on
+55 6	mesecons:wire_00000000_on
+55 7	mesecons:wire_00000000_on
+55 8	mesecons:wire_00000000_on
+55 9	mesecons:wire_00000000_on
+55 10	mesecons:wire_00000000_on
+55 11	mesecons:wire_00000000_on
+55 12	mesecons:wire_00000000_on
+55 13	mesecons:wire_00000000_on
+55 14	mesecons:wire_00000000_on
+55 15	mesecons:wire_00000000_on
 
 56	mcl_core:stone_with_diamond
 57	mcl_core:diamondblock
@@ -1059,8 +1098,22 @@
 //147 0	 weighted pressure plate (light)
 //148 0  weighted pressure plate (heavy)
 
-149 1	mcl_comparators:comparator_off_comp //need to fill in the rest of the comparator states
-150 1	mcl_comparators:comparator_on_comp //need to fill in the rest of the comparator states
+149 0	mcl_comparators:comparator_off_comp 0
+149 1	mcl_comparators:comparator_off_comp 1
+149 2	mcl_comparators:comparator_off_comp 2
+149 3	mcl_comparators:comparator_off_comp 3
+149 4	mcl_comparators:comparator_off_sub 0
+149 5	mcl_comparators:comparator_off_sub 1
+149 6	mcl_comparators:comparator_off_sub 2
+149 7	mcl_comparators:comparator_off_sub 3
+149 8	mcl_comparators:comparator_on_comp 0
+149 9	mcl_comparators:comparator_on_comp 1
+149 10	mcl_comparators:comparator_on_comp 2
+149 11	mcl_comparators:comparator_on_comp 3
+149 12	mcl_comparators:comparator_on_sub 0
+149 13	mcl_comparators:comparator_on_sub 1
+149 14	mcl_comparators:comparator_on_sub 2
+149 15	mcl_comparators:comparator_on_sub 3
 
 151 0	mesecons_solarpanel:solar_panel_off 1
 151 1	mesecons_solarpanel:solar_panel_on 1
@@ -1107,8 +1160,20 @@
 	156 7	mcl_stairs:stair_quartzblock 20
 #endif
 
-157	mcl_minecarts:activator_rail					// activator rail
+// Activator rail
+157 0	mcl_minecarts:activator_rail
+157 1	mcl_minecarts:activator_rail
+157 2	mcl_minecarts:activator_rail
+157 3	mcl_minecarts:activator_rail
+157 4	mcl_minecarts:activator_rail
+157 5	mcl_minecarts:activator_rail
 157 8	mcl_minecarts:activator_rail_on
+157 9	mcl_minecarts:activator_rail_on
+157 10	mcl_minecarts:activator_rail_on
+157 11	mcl_minecarts:activator_rail_on
+157 12	mcl_minecarts:activator_rail_on
+157 13	mcl_minecarts:activator_rail_on
+
 
 158 0	mcl_droppers:dropper_down
 158 1	mcl_droppers:dropper_up
@@ -1416,12 +1481,12 @@
 
 
 
-218 0	mcl_observers:observer 6
-218 1	mcl_observers:observer 4
-218 2	mcl_observers:observer 2
-218 3	mcl_observers:observer 0
-218 4	mcl_observers:observer 1
-218 5	mcl_observers:observer 3
+218 0	mcl_observers:observer_down_off
+218 1	mcl_observers:observer_up_off
+218 2	mcl_observers:observer_off 2
+218 3	mcl_observers:observer_off 0
+218 4	mcl_observers:observer_off 1
+218 5	mcl_observers:observer_off 3
 
 219 1	mcl_chests:white_shulker_box
 220 1	mcl_chests:orange_shulker_box
