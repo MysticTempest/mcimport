@@ -189,9 +189,9 @@
 7	mcl_core:bedrock				
 
 // blocks 8, 9, 10 and 11 (water and lava) are handled in code.
-8 mcl_core:water_flowing
+8	mcl_core:water_flowing
 9	mcl_core:water_source
-10 mcl_core:lava_flowing
+10	mcl_core:lava_flowing
 11	mcl_core:lava_source
 
 12 0	mcl_core:sand
@@ -353,7 +353,7 @@
 31 2	mcl_flowers:fern
 
 31 1	mcl_mcl_flowers:tallgrass		// code randomly changes height
-31 2 mcl_flowers:fern
+31 2	mcl_flowers:fern
 32	mcl_core:deadbush
 
 //normal pistons
@@ -418,7 +418,7 @@
 41	mcl_core:goldblock
 42	mcl_core:ironblock
 
-43 0	mcl_core:stone				// Double slabs
+43 0	mcl_stairs:slab_stone_double			// Double slabs
 43 1	mcl_core:sandstone
 43 2	mcl_core:wood
 43 3	mcl_core:cobble
@@ -430,7 +430,7 @@
 #ifdef QUARTZ
 43 7	mcl_nether:quartz_block
 #endif
-43 8	mcl_core:stone
+43 8	mcl_core:stone_smooth
 43 9	mcl_core:sandstone
 #ifdef QUARTZ
 43 10	mcl_nether:quartz_chiseled
