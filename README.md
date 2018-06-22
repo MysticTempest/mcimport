@@ -3,12 +3,24 @@
 
 This fork of mcimport converts a Minecraft world into Minetest; specifically a MineClone2 subgame.
 
-##Notes
-Compatible with Minecraft Worlds up to & including v1.12
+## Notes
+
+Compatible with Minecraft Worlds up to & including v1.12.2
+
 This is a WIP; so the conversion list is continually being refined for more accurate conversions.
 
+##### Coordinate Conversion from Minecraft to Minetest:
+```
+X = Approximately the same in both.
+Y = Approximately -64 nodes in MCL2
+Z = The number is approximately inverted.
 
-##MineClone 2 Info: 
+Example:
+Minecraft: -1457,4,-1632
+Minetest-MineClone2: -1439,-60,1647
+```
+
+## MineClone 2 Info: 
 * [Wuzzy's MineClone2 Sub-game forum link](https://forum.minetest.net/viewtopic.php?f=50&t=16407)
 * [Wuzzy's MineClone2 Repo](http://repo.or.cz/MineClone/MineClone2.git)
 

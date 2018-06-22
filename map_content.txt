@@ -1483,10 +1483,10 @@
 
 218 0	mcl_observers:observer_down_off
 218 1	mcl_observers:observer_up_off
-218 2	mcl_observers:observer_off 2
-218 3	mcl_observers:observer_off 0
-218 4	mcl_observers:observer_off 1
-218 5	mcl_observers:observer_off 3
+218 2	mcl_observers:observer_off 0
+218 3	mcl_observers:observer_off 2
+218 4	mcl_observers:observer_off 3
+218 5	mcl_observers:observer_off 1
 
 219 1	mcl_chests:white_shulker_box
 220 1	mcl_chests:orange_shulker_box
